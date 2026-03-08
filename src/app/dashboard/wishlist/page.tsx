@@ -20,7 +20,7 @@ export default async function WishlistPage() {
       {/* Header */}
       <div className="bg-white border-b border-stone-200">
         <div className="max-w-7xl mx-auto px-6 py-14">
-          <p className="text-[10px] tracking-[0.5em] uppercase text-stone-400 mb-4">
+          <p className="text-xs tracking-[0.5em] uppercase text-stone-400 mb-4">
             Your account
           </p>
           <div className="flex items-end justify-between">
@@ -60,7 +60,7 @@ export default async function WishlistPage() {
             </div>
             <Link
               href="/products"
-              className="bg-stone-900 text-white px-8 py-3 text-[10px] tracking-[0.35em] uppercase hover:bg-stone-700 transition-colors"
+              className="bg-stone-900 text-white px-8 py-3 text-xs tracking-[0.35em] uppercase hover:bg-stone-700 transition-colors"
             >
               Explore the collection
             </Link>

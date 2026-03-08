@@ -106,7 +106,7 @@ export default function FaqPage() {
       {/* Hero */}
       <div className="bg-white border-b border-stone-200">
         <div className="max-w-7xl mx-auto px-6 py-16">
-          <p className="text-[10px] tracking-[0.5em] uppercase text-stone-400 mb-4">
+          <p className="text-xs tracking-[0.5em] uppercase text-stone-400 mb-4">
             Support
           </p>
           <h1
@@ -148,10 +148,10 @@ export default function FaqPage() {
                     : "text-stone-500 hover:text-stone-900 hover:bg-stone-100"
                 }`}
               >
-                <span className={`text-[10px] transition-colors ${activeCategory === cat.label ? "text-stone-400" : "text-stone-300"}`}>
+                <span className={`text-xs transition-colors ${activeCategory === cat.label ? "text-stone-400" : "text-stone-300"}`}>
                   {cat.icon}
                 </span>
-                <span className="text-[11px] tracking-[0.3em] uppercase">
+                <span className="text-sm tracking-[0.3em] uppercase">
                   {cat.label}
                 </span>
               </button>
@@ -164,7 +164,7 @@ export default function FaqPage() {
               </p>
               <Link
                 href="/contact"
-                className="flex items-center gap-2 text-[10px] tracking-[0.3em] uppercase text-stone-600 hover:text-stone-900 transition-colors group"
+                className="flex items-center gap-2 text-xs tracking-[0.3em] uppercase text-stone-600 hover:text-stone-900 transition-colors group"
               >
                 Contact us
                 <svg width="12" height="8" viewBox="0 0 12 8" fill="none" className="transition-transform group-hover:translate-x-1">
@@ -250,7 +250,7 @@ export default function FaqPage() {
               </div>
               <Link
                 href="/contact"
-                className="shrink-0 border border-stone-600 text-white px-6 py-3 text-[10px] tracking-[0.35em] uppercase hover:bg-white hover:text-stone-900 hover:border-white transition-all"
+                className="shrink-0 border border-stone-600 text-white px-6 py-3 text-xs tracking-[0.35em] uppercase hover:bg-white hover:text-stone-900 hover:border-white transition-all"
               >
                 Get in touch
               </Link>

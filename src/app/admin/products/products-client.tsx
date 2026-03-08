@@ -59,14 +59,14 @@ export default function AdminProductsClient({ products, total, pages, categories
     <div className="flex flex-col gap-6">
       <div className="flex items-center justify-between">
         <div>
-          <p className="text-[10px] tracking-[0.5em] uppercase text-stone-600 mb-1">Admin</p>
+          <p className="text-xs tracking-[0.5em] uppercase text-stone-600 mb-1">Admin</p>
           <h1 className="text-3xl font-normal">
             Products <span className="text-stone-600 text-xl">({total})</span>
           </h1>
         </div>
         <button
           onClick={() => setShowForm(!showForm)}
-          className="bg-white text-stone-900 px-5 py-2.5 text-[10px] tracking-[0.35em] uppercase hover:bg-stone-100 transition-colors"
+          className="bg-white text-stone-900 px-5 py-2.5 text-xs tracking-[0.35em] uppercase hover:bg-stone-100 transition-colors"
         >
           + New product
         </button>
@@ -89,11 +89,11 @@ export default function AdminProductsClient({ products, total, pages, categories
           </div>
           <div className="flex items-center gap-2">
             <input type="checkbox" name="isFeatured" id="isFeatured" className="w-4 h-4" />
-            <label htmlFor="isFeatured" className="text-[10px] tracking-[0.3em] uppercase text-stone-400">Featured</label>
+            <label htmlFor="isFeatured" className="text-xs tracking-[0.3em] uppercase text-stone-400">Featured</label>
           </div>
           <div className="md:col-span-2 flex gap-3 justify-end">
-            <button type="button" onClick={() => setShowForm(false)} className="px-5 py-2.5 border border-stone-700 text-stone-400 text-[10px] tracking-[0.3em] uppercase hover:border-stone-500 transition-colors">Cancel</button>
-            <button type="submit" className="px-5 py-2.5 bg-white text-stone-900 text-[10px] tracking-[0.35em] uppercase hover:bg-stone-100 transition-colors">Create</button>
+            <button type="button" onClick={() => setShowForm(false)} className="px-5 py-2.5 border border-stone-700 text-stone-400 text-xs tracking-[0.3em] uppercase hover:border-stone-500 transition-colors">Cancel</button>
+            <button type="submit" className="px-5 py-2.5 bg-white text-stone-900 text-xs tracking-[0.35em] uppercase hover:bg-stone-100 transition-colors">Create</button>
           </div>
         </form>
       )}
@@ -138,8 +138,8 @@ export default function AdminProductsClient({ products, total, pages, categories
                 </td>
                 <td className="px-4 py-3">
                   <div className="flex gap-2">
-                    <Link href={`/products/${p.slug}`} target="_blank" className="text-[10px] tracking-[0.2em] uppercase text-stone-500 hover:text-white transition-colors">View</Link>
-                    <button onClick={() => handleArchive(p.id)} className="text-[10px] tracking-[0.2em] uppercase text-red-600 hover:text-red-400 transition-colors">Archive</button>
+                    <Link href={`/products/${p.slug}`} target="_blank" className="text-xs tracking-[0.2em] uppercase text-stone-500 hover:text-white transition-colors">View</Link>
+                    <button onClick={() => handleArchive(p.id)} className="text-xs tracking-[0.2em] uppercase text-red-600 hover:text-red-400 transition-colors">Archive</button>
                   </div>
                 </td>
               </tr>

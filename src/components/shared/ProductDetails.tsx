@@ -142,7 +142,7 @@ export default function ProductDetails({
                   key={size}
                   disabled={soldOut}
                   onClick={() => setSelectedSize(size!)}
-                  className={`min-w-12 h-10 px-3 text-[10px] tracking-[0.2em] border transition-all ${
+                  className={`min-w-12 h-10 px-3 text-xs tracking-[0.2em] border transition-all ${
                     soldOut
                       ? "border-stone-200 text-stone-300 cursor-not-allowed line-through"
                       : selectedSize === size
@@ -167,7 +167,7 @@ export default function ProductDetails({
 
       {/* Stock warning */}
       {lowStock && (
-        <p className="text-[10px] tracking-[0.3em] uppercase text-amber-600">
+        <p className="text-xs tracking-[0.3em] uppercase text-amber-600">
           Only {selectedVariant!.stock} left
         </p>
       )}
@@ -176,7 +176,7 @@ export default function ProductDetails({
       <button
         onClick={handleAddToCart}
         disabled={(hasSizes && !selectedSize) || outOfStock || added}
-        className={`w-full py-4 text-[11px] tracking-[0.35em] uppercase transition-all duration-300 ${
+        className={`w-full py-4 text-sm tracking-[0.35em] uppercase transition-all duration-300 ${
           added
             ? "bg-green-800 text-white"
             : outOfStock

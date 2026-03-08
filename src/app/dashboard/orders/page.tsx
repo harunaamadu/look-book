@@ -20,7 +20,7 @@ export default async function OrdersPage() {
       {/* Header */}
       <div className="bg-white border-b border-stone-200">
         <div className="max-w-5xl mx-auto px-6 py-14">
-          <p className="text-[10px] tracking-[0.5em] uppercase text-stone-400 mb-4">
+          <p className="text-xs tracking-[0.5em] uppercase text-stone-400 mb-4">
             Your account
           </p>
           <div className="flex items-end justify-between gap-4">
@@ -61,7 +61,7 @@ export default async function OrdersPage() {
             </div>
             <Link
               href="/products"
-              className="bg-stone-900 text-white px-8 py-3 text-[10px] tracking-[0.35em] uppercase hover:bg-stone-700 transition-colors"
+              className="bg-stone-900 text-white px-8 py-3 text-xs tracking-[0.35em] uppercase hover:bg-stone-700 transition-colors"
             >
               Start shopping
             </Link>
@@ -107,7 +107,7 @@ export default async function OrdersPage() {
                           className="relative w-14 h-18 bg-stone-100 border-2 border-white flex items-center justify-center"
                           style={{ zIndex: 0 }}
                         >
-                          <span className="text-[10px] text-stone-500 tracking-wide">
+                          <span className="text-xs text-stone-500 tracking-wide">
                             +{extraItems}
                           </span>
                         </div>
@@ -118,7 +118,7 @@ export default async function OrdersPage() {
                     <div className="flex-1 flex flex-col gap-1.5 min-w-0">
                       <div className="flex items-start justify-between gap-4">
                         <div>
-                          <p className="text-[10px] tracking-[0.3em] uppercase text-stone-400 mb-1">
+                          <p className="text-xs tracking-[0.3em] uppercase text-stone-400 mb-1">
                             Order #{order.id.slice(-8).toUpperCase()}
                           </p>
                           <p
@@ -142,7 +142,7 @@ export default async function OrdersPage() {
 
                       <div className="flex flex-wrap items-center gap-4 mt-1">
                         {/* Status badge */}
-                        <span className={`flex items-center gap-1.5 text-[10px] tracking-[0.25em] uppercase ${config.color}`}>
+                        <span className={`flex items-center gap-1.5 text-xs tracking-[0.25em] uppercase ${config.color}`}>
                           <span className={`w-1.5 h-1.5 rounded-full ${config.dot}`} />
                           {config.label}
                         </span>

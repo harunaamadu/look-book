@@ -92,7 +92,7 @@ export default async function ShopPage({ searchParams }: ShopPageProps) {
   const activeCategoryObj = categories.find((c) => c.slug === activeCategory);
 
   return (
-    <main className="min-h-screen bg-[#fafaf8]">
+    <main className="min-h-screen bg-background text-foreground">
 
       {/* Page header */}
       <div
@@ -106,11 +106,11 @@ export default async function ShopPage({ searchParams }: ShopPageProps) {
       >
         <div className="max-w-7xl mx-auto px-6 py-14">
           <div className="relative flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-            <div className="absolute left-1/2 -top-14 -translate-x-1/2 w-screen h-57.5 z-0 bg-linear-to-l from-black/50 via-black/5 to-black/50" />
+            <div className="absolute left-1/2 -top-14 -translate-x-1/2 w-screen max-w-7xl mx-auto h-screen z-0 bg-linear-to-l from-black/50 via-black/5 to-black/50" />
             <div className="relative z-1">
               <div className="flex items-center gap-3 mb-4">
                 <p
-                  className={`text-[10px] tracking-[0.5em] uppercase ${
+                  className={`text-xs tracking-[0.5em] uppercase ${
                     activeFilter === "sale" ? "text-stone-400" : "text-stone-100"
                   }`}
                 >
@@ -152,7 +152,7 @@ export default async function ShopPage({ searchParams }: ShopPageProps) {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 py-12">
+      <div className="max-w-7xl mx-auto px-6 py-12 relative z-10 bg-background">
 
         {/* Category filter */}
         <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
@@ -238,7 +238,7 @@ function EmptyState({ filter }: { filter: Filter }) {
       </p>
       <Link
         href="/products"
-        className="text-[10px] tracking-[0.35em] uppercase text-stone-500 underline underline-offset-4 hover:text-stone-900 transition-colors"
+        className="text-xs tracking-[0.35em] uppercase text-stone-500 underline underline-offset-4 hover:text-stone-900 transition-colors"
       >
         View all products
       </Link>

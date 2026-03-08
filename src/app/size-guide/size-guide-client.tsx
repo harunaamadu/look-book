@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import type { Metadata } from "next";
 import Link from "next/link";
 
 const categories = ["Tops & Dresses", "Trousers", "Outerwear"];
@@ -92,7 +91,7 @@ export default function SizeGuidePage() {
       {/* Hero */}
       <div className="bg-white border-b border-stone-200">
         <div className="max-w-7xl mx-auto px-6 py-16">
-          <p className="text-[10px] tracking-[0.5em] uppercase text-stone-400 mb-4">
+          <p className="text-xs tracking-[0.5em] uppercase text-stone-400 mb-4">
             Fit & Sizing
           </p>
           <h1 className="text-5xl md:text-6xl font-light text-stone-900 leading-none tracking-tight mb-4">
@@ -113,7 +112,7 @@ export default function SizeGuidePage() {
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`px-6 py-3 text-[10px] tracking-[0.3em] uppercase transition-all border-b-2 -mb-px ${
+                className={`px-6 py-3 text-xs tracking-[0.3em] uppercase transition-all border-b-2 -mb-px ${
                   activeCategory === cat
                     ? "border-stone-900 text-stone-900"
                     : "border-transparent text-stone-400 hover:text-stone-700"
@@ -165,7 +164,7 @@ export default function SizeGuidePage() {
             </table>
           </div>
 
-          <p className="mt-4 text-[10px] text-stone-400 tracking-wide">
+          <p className="mt-4 text-xs text-stone-400 tracking-wide">
             ✦ All measurements are body measurements, not garment measurements.
             Actual garment dimensions may vary by style.
           </p>
@@ -174,7 +173,7 @@ export default function SizeGuidePage() {
         {/* How to measure */}
         <section>
           <div className="mb-8">
-            <p className="text-[10px] tracking-[0.5em] uppercase text-stone-400 mb-3">
+            <p className="text-xs tracking-[0.5em] uppercase text-stone-400 mb-3">
               Guidance
             </p>
             <h2 className="text-3xl font-light text-stone-900">
@@ -222,7 +221,7 @@ export default function SizeGuidePage() {
           </div>
           <Link
             href="/contact"
-            className="shrink-0 bg-stone-900 text-white px-8 py-3 text-[10px] tracking-[0.35em] uppercase hover:bg-stone-700 transition-colors"
+            className="shrink-0 bg-stone-900 text-white px-8 py-3 text-xs tracking-[0.35em] uppercase hover:bg-stone-700 transition-colors"
           >
             Ask a stylist
           </Link>

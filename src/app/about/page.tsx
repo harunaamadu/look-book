@@ -71,7 +71,7 @@ export default function AboutPage() {
           </span>
         </div>
         <div className="relative max-w-7xl mx-auto px-6 py-28 md:py-40">
-          <p className="text-[10px] tracking-[0.5em] uppercase text-stone-500 mb-8">
+          <p className="text-xs tracking-[0.5em] uppercase text-stone-500 mb-8">
             Est. 2018 — London
           </p>
           <h1 className="text-5xl md:text-7xl font-light text-white leading-[1.05] tracking-tight max-w-3xl mb-8">
@@ -89,7 +89,7 @@ export default function AboutPage() {
       <div className="border-b border-stone-200 bg-white">
         <div className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-12 items-start">
           <div>
-            <p className="text-[10px] tracking-[0.5em] uppercase text-stone-400">
+            <p className="text-xs tracking-[0.5em] uppercase text-stone-400">
               Our mission
             </p>
           </div>
@@ -110,7 +110,7 @@ export default function AboutPage() {
         {/* Values */}
         <section>
           <div className="mb-12">
-            <p className="text-[10px] tracking-[0.5em] uppercase text-stone-400 mb-3">
+            <p className="text-xs tracking-[0.5em] uppercase text-stone-400 mb-3">
               What we stand for
             </p>
             <h2 className="text-3xl font-light text-stone-900">Our values</h2>
@@ -141,7 +141,7 @@ export default function AboutPage() {
         {/* Timeline */}
         <section>
           <div className="mb-12">
-            <p className="text-[10px] tracking-[0.5em] uppercase text-stone-400 mb-3">
+            <p className="text-xs tracking-[0.5em] uppercase text-stone-400 mb-3">
               Journey
             </p>
             <h2 className="text-3xl font-light text-stone-900">
@@ -186,7 +186,7 @@ export default function AboutPage() {
                 <span className="text-4xl md:text-5xl font-light text-white leading-none">
                   {stat.value}
                 </span>
-                <span className="text-[10px] tracking-[0.35em] uppercase text-stone-500">
+                <span className="text-xs tracking-[0.35em] uppercase text-stone-500">
                   {stat.label}
                 </span>
               </div>
@@ -198,13 +198,13 @@ export default function AboutPage() {
         <section className="flex flex-col md:flex-row gap-4">
           <Link
             href="/products"
-            className="flex-1 border border-stone-900 text-stone-900 py-5 text-[11px] tracking-[0.35em] uppercase text-center hover:bg-stone-900 hover:text-white transition-all"
+            className="flex-1 border border-stone-900 text-stone-900 py-5 text-sm tracking-[0.35em] uppercase text-center hover:bg-stone-900 hover:text-white transition-all"
           >
             Shop the collection
           </Link>
           <Link
             href="/contact"
-            className="flex-1 bg-stone-900 text-white py-5 text-[11px] tracking-[0.35em] uppercase text-center hover:bg-stone-700 transition-colors"
+            className="flex-1 bg-stone-900 text-white py-5 text-sm tracking-[0.35em] uppercase text-center hover:bg-stone-700 transition-colors"
           >
             Get in touch
           </Link>

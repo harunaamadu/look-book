@@ -33,7 +33,7 @@ export default function AdminUsersClient({ users, total, pages, currentPage }: {
   return (
     <div className="flex flex-col gap-6">
       <div>
-        <p className="text-[10px] tracking-[0.5em] uppercase text-stone-600 mb-1">Admin</p>
+        <p className="text-xs tracking-[0.5em] uppercase text-stone-600 mb-1">Admin</p>
         <h1 className="text-3xl font-normal">
           Users <span className="text-stone-600 text-xl">({total})</span>
         </h1>
@@ -61,7 +61,7 @@ export default function AdminUsersClient({ users, total, pages, currentPage }: {
                     </div>
                     <div>
                       <p className="text-xs">{user.name ?? "—"}</p>
-                      <p className="text-[10px] text-stone-500">{user.email}</p>
+                      <p className="text-xs text-stone-500">{user.email}</p>
                     </div>
                   </div>
                 </td>
@@ -74,7 +74,7 @@ export default function AdminUsersClient({ users, total, pages, currentPage }: {
                   <select
                     defaultValue={user.role}
                     onChange={(e) => handleRoleChange(user.id, e.target.value as any)}
-                    className="bg-stone-100 border border-stone-300 text-[10px] tracking-wide px-2 py-1.5 focus:outline-none focus:border-stone-500"
+                    className="bg-stone-100 border border-stone-300 text-xs tracking-wide px-2 py-1.5 focus:outline-none focus:border-stone-500"
                   >
                     <option value="CUSTOMER">Customer</option>
                     <option value="ADMIN">Admin</option>
@@ -83,7 +83,7 @@ export default function AdminUsersClient({ users, total, pages, currentPage }: {
                 <td className="px-4 py-3">
                   <button
                     onClick={() => handleDelete(user.id, user.name ?? user.email)}
-                    className="text-[10px] tracking-[0.2em] uppercase text-red-600 hover:text-red-400 transition-colors"
+                    className="text-xs tracking-[0.2em] uppercase text-red-600 hover:text-red-400 transition-colors"
                   >
                     Delete
                   </button>

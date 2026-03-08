@@ -87,9 +87,10 @@ export default function CheckoutForm({ user }: { user: User | null }) {
 
         {/* Contact */}
         <fieldset className="flex flex-col gap-4">
-          <legend className="text-[10px] tracking-[0.45em] uppercase text-stone-400 mb-2">
+          <legend className="text-sm tracking-[0.45em] uppercase mb-4">
             Contact
           </legend>
+
           <div className="grid grid-cols-2 gap-4">
             <Field label="Full name" name="name" defaultValue={user?.name ?? ""} required />
             <Field label="Email" name="email" type="email" defaultValue={user?.email ?? ""} required />
@@ -98,7 +99,7 @@ export default function CheckoutForm({ user }: { user: User | null }) {
 
         {/* Shipping */}
         <fieldset className="flex flex-col gap-4">
-          <legend className="text-[10px] tracking-[0.45em] uppercase text-stone-400 mb-2">
+          <legend className="text-xs tracking-[0.45em] uppercase text-stone-400 mb-2">
             Shipping address
           </legend>
           <Field label="Street address" name="address" required />
@@ -134,7 +135,7 @@ export default function CheckoutForm({ user }: { user: User | null }) {
 
         {/* Payment */}
         <fieldset className="flex flex-col gap-4">
-          <legend className="text-[10px] tracking-[0.45em] uppercase text-stone-400 mb-2">
+          <legend className="text-xs tracking-[0.45em] uppercase text-stone-400 mb-2">
             Payment
           </legend>
           <div className="border border-stone-200 p-4 bg-stone-50 flex items-center gap-3">
@@ -153,19 +154,19 @@ export default function CheckoutForm({ user }: { user: User | null }) {
         <button
           type="submit"
           disabled={loading}
-          className="w-full bg-stone-900 text-white py-4 text-[11px] tracking-[0.35em] uppercase hover:bg-stone-700 transition-colors disabled:opacity-50"
+          className="w-full bg-stone-900 text-white py-4 text-sm tracking-[0.35em] uppercase hover:bg-stone-700 transition-colors disabled:opacity-50"
         >
           {loading ? "Placing order..." : `Place order — ${formatPrice(total, currency)}`}
         </button>
 
-        <p className="text-[10px] text-stone-400 text-center tracking-wide">
+        <p className="text-xs text-stone-400 text-center tracking-wide">
           By placing your order you agree to our Terms & Conditions and Privacy Policy.
         </p>
       </form>
 
       {/* Right — order summary */}
       <div className="lg:sticky lg:top-8 lg:self-start flex flex-col gap-6">
-        <h2 className="text-[10px] tracking-[0.45em] uppercase text-stone-400">
+        <h2 className="text-xs tracking-[0.45em] uppercase text-stone-400">
           Order summary
         </h2>
 
@@ -196,21 +197,21 @@ export default function CheckoutForm({ user }: { user: User | null }) {
 
         <div className="border-t border-stone-200 pt-4 flex flex-col gap-2 text-sm">
           <div className="flex justify-between text-stone-500">
-            <span className="text-[10px] tracking-[0.3em] uppercase">Subtotal</span>
+            <span className="text-xs tracking-[0.3em] uppercase">Subtotal</span>
             <span>{formatPrice(subtotal, currency)}</span>
           </div>
           {discountAmount > 0 && (
             <div className="flex justify-between text-green-700">
-              <span className="text-[10px] tracking-[0.3em] uppercase">Discount ({discount}%)</span>
+              <span className="text-xs tracking-[0.3em] uppercase">Discount ({discount}%)</span>
               <span>−{formatPrice(discountAmount, currency)}</span>
             </div>
           )}
           <div className="flex justify-between text-stone-500">
-            <span className="text-[10px] tracking-[0.3em] uppercase">Shipping</span>
-            <span className="text-[10px] uppercase text-stone-400">Free</span>
+            <span className="text-xs tracking-[0.3em] uppercase">Shipping</span>
+            <span className="text-xs uppercase text-stone-400">Free</span>
           </div>
           <div className="flex justify-between font-medium text-stone-900 pt-2 border-t border-stone-100">
-            <span className="text-[10px] tracking-[0.3em] uppercase">Total</span>
+            <span className="text-xs tracking-[0.3em] uppercase">Total</span>
             <span>{formatPrice(total, currency)}</span>
           </div>
         </div>

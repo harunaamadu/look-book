@@ -40,7 +40,7 @@ export default async function OrderDetailPage({ params }: OrderDetailPageProps) 
         <div className="max-w-5xl mx-auto px-6 py-10">
           <Link
             href="/dashboard/orders"
-            className="inline-flex items-center gap-2 text-[10px] tracking-[0.35em] uppercase text-stone-400 hover:text-stone-900 transition-colors mb-6 group"
+            className="inline-flex items-center gap-2 text-xs tracking-[0.35em] uppercase text-stone-400 hover:text-stone-900 transition-colors mb-6 group"
           >
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="group-hover:-translate-x-0.5 transition-transform">
               <path d="M10 7H4M6 4L3 7l3 3" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -50,7 +50,7 @@ export default async function OrderDetailPage({ params }: OrderDetailPageProps) 
 
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
             <div>
-              <p className="text-[10px] tracking-[0.4em] uppercase text-stone-400 mb-2">
+              <p className="text-sm tracking-[0.4em] uppercase text-stone-400 mb-2">
                 Order #{order.id.slice(-8).toUpperCase()}
               </p>
               <h1
@@ -61,7 +61,7 @@ export default async function OrderDetailPage({ params }: OrderDetailPageProps) 
               </h1>
             </div>
             <div className="flex flex-col items-start sm:items-end gap-1 pb-0.5">
-              <span className={`flex items-center gap-1.5 text-[10px] tracking-[0.3em] uppercase font-medium ${config.color}`}>
+              <span className={`flex items-center gap-1.5 text-sm tracking-[0.3em] uppercase font-medium ${config.color}`}>
                 <span className={`w-2 h-2 rounded-full ${config.dot} animate-pulse`} />
                 {config.label}
               </span>
@@ -82,8 +82,8 @@ export default async function OrderDetailPage({ params }: OrderDetailPageProps) 
 
         {/* Progress tracker */}
         {!isCancelled && (
-          <div className="bg-white border border-stone-200 p-8">
-            <p className="text-[10px] tracking-[0.45em] uppercase text-stone-400 mb-8">
+          <div className="bg-background border border-stone-200 p-8">
+            <p className="text-sm tracking-[0.45em] uppercase text-stone-400 mb-8">
               Order progress
             </p>
             <div className="relative flex items-start justify-between">
@@ -155,7 +155,7 @@ export default async function OrderDetailPage({ params }: OrderDetailPageProps) 
 
           {/* Left — order items */}
           <div className="flex flex-col gap-4">
-            <p className="text-[10px] tracking-[0.45em] uppercase text-stone-400">
+            <p className="text-xs tracking-[0.45em] uppercase text-stone-400">
               {order.items.length} {order.items.length === 1 ? "item" : "items"}
             </p>
 
@@ -223,22 +223,22 @@ export default async function OrderDetailPage({ params }: OrderDetailPageProps) 
 
             {/* Order summary */}
             <div className="bg-white border border-stone-200 p-6 flex flex-col gap-4">
-              <p className="text-[10px] tracking-[0.45em] uppercase text-stone-400">
+              <p className="text-xs tracking-[0.45em] uppercase text-stone-400">
                 Summary
               </p>
 
               <div className="flex flex-col gap-2.5 text-sm">
                 <div className="flex justify-between text-stone-500">
-                  <span className="text-[10px] tracking-[0.3em] uppercase">Subtotal</span>
+                  <span className="text-xs tracking-[0.3em] uppercase">Subtotal</span>
                   <span>${order.total.toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between text-stone-500">
-                  <span className="text-[10px] tracking-[0.3em] uppercase">Shipping</span>
-                  <span className="text-[10px] uppercase text-stone-400">Free</span>
+                  <span className="text-xs tracking-[0.3em] uppercase">Shipping</span>
+                  <span className="text-xs uppercase text-stone-400">Free</span>
                 </div>
                 <div className="h-px bg-stone-100" />
                 <div className="flex justify-between text-stone-900 font-medium">
-                  <span className="text-[10px] tracking-[0.3em] uppercase">Total</span>
+                  <span className="text-xs tracking-[0.3em] uppercase">Total</span>
                   <span>${order.total.toFixed(2)}</span>
                 </div>
               </div>
@@ -246,7 +246,7 @@ export default async function OrderDetailPage({ params }: OrderDetailPageProps) 
 
             {/* Order meta */}
             <div className="bg-white border border-stone-200 p-6 flex flex-col gap-4">
-              <p className="text-[10px] tracking-[0.45em] uppercase text-stone-400">
+              <p className="text-xs tracking-[0.45em] uppercase text-stone-400">
                 Details
               </p>
               <div className="flex flex-col gap-3">
@@ -267,7 +267,7 @@ export default async function OrderDetailPage({ params }: OrderDetailPageProps) 
                   },
                 ].map((row) => (
                   <div key={row.label} className="flex justify-between items-start gap-4">
-                    <span className="text-[10px] tracking-[0.3em] uppercase text-stone-400 shrink-0">
+                    <span className="text-xs tracking-[0.3em] uppercase text-stone-400 shrink-0">
                       {row.label}
                     </span>
                     <span className="text-xs text-stone-700 text-right">
@@ -282,13 +282,13 @@ export default async function OrderDetailPage({ params }: OrderDetailPageProps) 
             <div className="flex flex-col gap-2">
               <Link
                 href="/products"
-                className="w-full bg-stone-900 text-white py-3 text-[10px] tracking-[0.35em] uppercase text-center hover:bg-stone-700 transition-colors"
+                className="w-full bg-stone-900 text-white py-3 text-xs tracking-[0.35em] uppercase text-center hover:bg-stone-700 transition-colors"
               >
                 Continue shopping
               </Link>
               <Link
                 href="/contact"
-                className="w-full border border-stone-200 text-stone-500 py-3 text-[10px] tracking-[0.35em] uppercase text-center hover:border-stone-900 hover:text-stone-900 transition-all"
+                className="w-full border border-stone-200 text-stone-500 py-3 text-xs tracking-[0.35em] uppercase text-center hover:border-stone-900 hover:text-stone-900 transition-all"
               >
                 Need help?
               </Link>

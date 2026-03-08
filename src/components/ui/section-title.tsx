@@ -22,7 +22,7 @@ export default function SectionTitle({
       <div className="flex items-end justify-between gap-6 mb-10">
         <div>
           {eyebrow && (
-            <p className="text-[10px] tracking-[0.45em] uppercase text-stone-400 mb-2">
+            <p className="text-xs tracking-[0.45em] uppercase text-stone-400 mb-2">
               {eyebrow}
             </p>
           )}
@@ -39,7 +39,7 @@ export default function SectionTitle({
 
         <Link
           href={viewAllHref}
-          className="group shrink-0 inline-flex items-center gap-2.5 text-[11px] tracking-[0.3em] uppercase text-stone-500 hover:text-stone-900 transition-colors"
+          className="group shrink-0 inline-flex items-center gap-2.5 text-sm tracking-[0.3em] uppercase text-stone-500 hover:text-stone-900 transition-colors"
         >
           {viewAllLabel}
           <span className="w-6 h-px bg-stone-400 group-hover:w-10 group-hover:bg-stone-900 transition-all duration-300" />
@@ -53,7 +53,7 @@ export default function SectionTitle({
     <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
       <div className="flex-1">
         {eyebrow && (
-          <p className="text-[10px] tracking-[0.5em] uppercase text-stone-400 mb-4">
+          <p className="text-xs tracking-[0.5em] uppercase text-stone-400 mb-4">
             {eyebrow}
           </p>
         )}
@@ -81,7 +81,7 @@ export default function SectionTitle({
         href={viewAllHref}
         className="group inline-flex items-center gap-3 shrink-0 self-start md:self-end"
       >
-        <span className="text-[11px] tracking-[0.35em] uppercase text-stone-500 group-hover:text-stone-900 transition-colors">
+        <span className="text-sm tracking-[0.35em] uppercase text-stone-500 group-hover:text-stone-900 transition-colors">
           {viewAllLabel}
         </span>
         <span className="flex items-center justify-center w-9 h-9 border border-stone-300 group-hover:border-stone-900 group-hover:bg-stone-900 transition-all duration-300">

@@ -194,7 +194,7 @@ export default function Footer() {
             {/* Link columns */}
             {Object.entries(footerLinks).map(([group, links]) => (
               <div key={group} className="flex flex-col gap-4">
-                <p className="text-[10px] tracking-[0.45em] uppercase text-stone-400">
+                <p className="text-base font-semibold tracking-[0.45em] uppercase text-stone-300">
                   {group}
                 </p>
                 <ul className="flex flex-col gap-3">
@@ -216,7 +216,7 @@ export default function Footer() {
 
         {/* Payment gateways */}
         <div className="max-w-7xl mx-auto px-6 py-5 border-t border-stone-800 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-[10px] tracking-[0.4em] uppercase text-stone-400">
+          <p className="text-xs tracking-[0.4em] uppercase text-stone-400">
             Secure Payments
           </p>
           <div className="flex items-center gap-4">
@@ -246,14 +246,14 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-stone-800">
           <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
-            <p className="text-[11px] tracking-wide text-stone-400">
+            <p className="text-sm tracking-wide text-stone-400">
               © {new Date().getFullYear()}{" "}
               <span className="uppercase">{WEBSITE_NAME}</span>. All rights
               reserved.
             </p>
 
             <p className="text-xs">
-              Developed and Designed by{" "}
+              Developed &amp; Designed by{" "}
               <a
                 href="https://facebook.com/harunaamadu95"
                 target="_blank"
@@ -269,7 +269,7 @@ export default function Footer() {
                   <Link
                     key={label}
                     href="#"
-                    className="text-[11px] tracking-wide text-stone-400 hover:text-stone-300 transition-colors"
+                    className="text-sm tracking-wide text-stone-400 hover:text-stone-300 transition-colors"
                   >
                     {label}
                   </Link>

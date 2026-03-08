@@ -75,7 +75,7 @@ export default function SettingsClient({ user }: { user: User }) {
       {/* Header */}
       <div className="bg-white border-b border-stone-200">
         <div className="max-w-6xl mx-auto px-6 py-14">
-          <p className="text-[10px] tracking-[0.5em] uppercase text-stone-400 mb-4">
+          <p className="text-xs tracking-[0.5em] uppercase text-stone-400 mb-4">
             Your account
           </p>
           <h1
@@ -94,7 +94,7 @@ export default function SettingsClient({ user }: { user: User }) {
               <button
                 key={item.key}
                 onClick={() => setActive(item.key)}
-                className={`shrink-0 px-4 py-3 text-left text-[11px] tracking-[0.3em] uppercase transition-all duration-200 ${
+                className={`shrink-0 px-4 py-3 text-left text-sm tracking-[0.3em] uppercase transition-all duration-200 ${
                   active === item.key
                     ? item.key === "danger"
                       ? "bg-red-600 text-white"
@@ -174,7 +174,7 @@ function ProfileSection({ user }: { user: User }) {
         <div>
           <p className="text-sm text-stone-900 mb-0.5">{user.name ?? "—"}</p>
           <p className="text-xs text-stone-400">{user.email}</p>
-          <p className="text-[10px] tracking-widest uppercase text-stone-300 mt-1">
+          <p className="text-xs tracking-widest uppercase text-stone-300 mt-1">
             Member since{" "}
             {new Date(user.createdAt).toLocaleDateString("en-GB", {
               month: "long",
@@ -220,7 +220,7 @@ function ProfileSection({ user }: { user: User }) {
             placeholder="A short bio about yourself..."
             className="border border-stone-200 bg-transparent px-4 py-3 text-sm text-stone-900 placeholder:text-stone-300 focus:outline-none focus:border-stone-900 transition-colors resize-none"
           />
-          <p className="text-[10px] text-stone-300 text-right">
+          <p className="text-xs text-stone-300 text-right">
             {bio.length}/200
           </p>
         </div>
@@ -369,7 +369,7 @@ function PreferencesSection({ user }: { user: User }) {
             placeholder="e.g. London, United Kingdom"
             className="border border-stone-200 bg-transparent px-4 py-3 text-sm text-stone-900 placeholder:text-stone-300 focus:outline-none focus:border-stone-900 transition-colors"
           />
-          <p className="text-[10px] text-stone-400">
+          <p className="text-xs text-stone-400">
             Used to show relevant shipping options and estimated delivery times.
           </p>
         </div>
@@ -571,7 +571,7 @@ function SecuritySection({ hasPassword }: { hasPassword: boolean }) {
 
       {/* Sessions info */}
       <div className="bg-white border border-stone-200 p-7 flex flex-col gap-4">
-        <p className="text-[10px] tracking-[0.45em] uppercase text-stone-400">
+        <p className="text-xs tracking-[0.45em] uppercase text-stone-400">
           Active sessions
         </p>
         <div className="flex items-center justify-between">
@@ -579,7 +579,7 @@ function SecuritySection({ hasPassword }: { hasPassword: boolean }) {
             <p className="text-sm text-stone-900 mb-0.5">Current session</p>
             <p className="text-xs text-stone-400">Signed in now</p>
           </div>
-          <span className="flex items-center gap-1.5 text-[10px] tracking-[0.25em] uppercase text-green-600">
+          <span className="flex items-center gap-1.5 text-xs tracking-[0.25em] uppercase text-green-600">
             <span className="w-1.5 h-1.5 rounded-full bg-green-400" />
             Active
           </span>
@@ -610,7 +610,7 @@ function DangerSection({ email }: { email: string }) {
             orders, reviews and preferences.
           </p>
         </div>
-        <button className="shrink-0 border border-stone-300 text-stone-600 px-6 py-3 text-[10px] tracking-[0.3em] uppercase hover:border-stone-900 hover:text-stone-900 transition-all">
+        <button className="shrink-0 border border-stone-300 text-stone-600 px-6 py-3 text-xs tracking-[0.3em] uppercase hover:border-stone-900 hover:text-stone-900 transition-all">
           Request export
         </button>
       </div>
@@ -637,7 +637,7 @@ function DangerSection({ email }: { email: string }) {
           />
           <button
             disabled={confirm !== email || loading}
-            className="self-start bg-red-600 text-white px-6 py-3 text-[10px] tracking-[0.3em] uppercase hover:bg-red-700 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+            className="self-start bg-red-600 text-white px-6 py-3 text-xs tracking-[0.3em] uppercase hover:bg-red-700 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
           >
             {loading ? "Deleting..." : "Delete my account"}
           </button>
@@ -700,7 +700,7 @@ function SettingsField({
         disabled={disabled}
         className="border border-stone-200 bg-transparent px-4 py-3 text-sm text-stone-900 placeholder:text-stone-300 focus:outline-none focus:border-stone-900 transition-colors disabled:bg-stone-50 disabled:text-stone-400 disabled:cursor-not-allowed"
       />
-      {hint && <p className="text-[10px] text-stone-400">{hint}</p>}
+      {hint && <p className="text-xs text-stone-400">{hint}</p>}
     </div>
   );
 }
@@ -753,7 +753,7 @@ function SaveButton({
         type={type}
         onClick={onClick}
         disabled={loading}
-        className="bg-stone-900 text-white px-8 py-3 text-[11px] tracking-[0.35em] uppercase hover:bg-stone-700 transition-colors disabled:opacity-50"
+        className="bg-stone-900 text-white px-8 py-3 text-sm tracking-[0.35em] uppercase hover:bg-stone-700 transition-colors disabled:opacity-50"
       >
         {loading ? "Saving..." : label}
       </button>

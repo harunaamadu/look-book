@@ -177,7 +177,7 @@ function AdminReviewsClient({ reviews, total, pages, currentPage }) {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-[10px] tracking-[0.5em] uppercase text-stone-600 mb-1",
+                        className: "text-xs tracking-[0.5em] uppercase text-stone-600 mb-1",
                         children: "Admin"
                     }, void 0, false, {
                         fileName: "[project]/src/app/admin/reviews/reviews-client.tsx",
@@ -235,7 +235,7 @@ function AdminReviewsClient({ reviews, total, pages, currentPage }) {
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-[10px] tracking-[0.3em] uppercase text-stone-500",
+                                                        className: "text-xs tracking-[0.3em] uppercase text-stone-500",
                                                         children: new Date(r.createdAt).toLocaleDateString("en-GB", {
                                                             day: "numeric",
                                                             month: "short",
@@ -276,7 +276,7 @@ function AdminReviewsClient({ reviews, total, pages, currentPage }) {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: ()=>handleDelete(r.id),
-                                        className: "shrink-0 text-[10px] tracking-[0.2em] uppercase text-red-600 hover:text-red-400 transition-colors",
+                                        className: "shrink-0 text-xs tracking-[0.2em] uppercase text-red-600 hover:text-red-400 transition-colors",
                                         children: "Delete"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/admin/reviews/reviews-client.tsx",
@@ -293,7 +293,7 @@ function AdminReviewsClient({ reviews, total, pages, currentPage }) {
                                 className: "flex items-center gap-6 pt-2 border-t border-stone-800",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "text-[10px] text-stone-600",
+                                        className: "text-xs text-stone-600",
                                         children: [
                                             "By: ",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -311,7 +311,7 @@ function AdminReviewsClient({ reviews, total, pages, currentPage }) {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "text-[10px] text-stone-600",
+                                        className: "text-xs text-stone-600",
                                         children: [
                                             "Product:",
                                             " ",

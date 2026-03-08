@@ -26,15 +26,15 @@ export default function FilterTabs({ active }: { active: Filter }) {
   }
 
   return (
-    <div className="flex items-center gap-1 border border-stone-200 p-1 bg-white/50 backdrop-blur-sm">
+    <div className="flex items-center gap-1 border border-stone-200 p-1 bg-white/80 backdrop-blur-sm">
       {tabs.map((tab) => (
         <button
           key={tab.value}
           onClick={() => navigate(tab.value)}
-          className={`px-5 py-2 text-[10px] tracking-[0.3em] uppercase transition-all duration-200 ${
+          className={`px-5 py-2 text-xs tracking-[0.3em] uppercase transition-all duration-200 ${
             active === tab.value
-              ? "bg-stone-900 text-white"
-              : "text-stone-500 hover:text-stone-900 hover:bg-stone-100"
+              ? "bg-stone-900 text-white font-normal"
+              : "text-stone-800 hover:text-stone-900 hover:bg-stone-100"
           }`}
         >
           {tab.label}

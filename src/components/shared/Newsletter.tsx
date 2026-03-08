@@ -147,7 +147,7 @@ export default function Newsletter() {
                     <button
                       type="submit"
                       disabled={state === "loading"}
-                      className="group relative overflow-hidden bg-white text-stone-900 px-8 py-4 text-[11px] tracking-[0.3em] uppercase font-medium hover:bg-stone-100 transition-colors disabled:opacity-70 shrink-0"
+                      className="group relative overflow-hidden bg-white text-stone-900 px-8 py-4 text-sm tracking-[0.3em] uppercase font-medium hover:bg-stone-100 transition-colors disabled:opacity-70 shrink-0"
                     >
                       <span
                         className={`transition-all duration-300 ${

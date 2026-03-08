@@ -15,7 +15,7 @@ export default function NotFound() {
           </span>
           <div className="absolute inset-0 flex items-center">
             <div className="w-12 h-px bg-stone-900 mr-4 shrink-0" />
-            <p className="text-[10px] tracking-[0.5em] uppercase text-stone-400">
+            <p className="text-xs tracking-[0.5em] uppercase text-stone-400">
               Page not found
             </p>
           </div>
@@ -37,13 +37,13 @@ export default function NotFound() {
         <div className="flex flex-col sm:flex-row gap-3">
           <Link
             href="/"
-            className="flex-1 bg-stone-900 text-white py-4 text-[11px] tracking-[0.35em] uppercase text-center hover:bg-stone-700 transition-colors"
+            className="flex-1 bg-stone-900 text-white py-4 text-sm tracking-[0.35em] uppercase text-center hover:bg-stone-700 transition-colors"
           >
             Return home
           </Link>
           <Link
             href="/products"
-            className="flex-1 border border-stone-300 text-stone-600 py-4 text-[11px] tracking-[0.35em] uppercase text-center hover:border-stone-900 hover:text-stone-900 transition-all"
+            className="flex-1 border border-stone-300 text-stone-600 py-4 text-sm tracking-[0.35em] uppercase text-center hover:border-stone-900 hover:text-stone-900 transition-all"
           >
             Shop all
           </Link>
@@ -52,19 +52,19 @@ export default function NotFound() {
         <div className="mt-10 pt-8 border-t border-stone-200 flex items-center gap-6">
           <Link
             href="/collections"
-            className="text-[10px] tracking-[0.3em] uppercase text-stone-400 hover:text-stone-900 transition-colors"
+            className="text-sm tracking-[0.3em] uppercase text-stone-400 hover:text-stone-900 transition-colors"
           >
             Collections
           </Link>
           <Link
             href="/products?filter=new"
-            className="text-[10px] tracking-[0.3em] uppercase text-stone-400 hover:text-stone-900 transition-colors"
+            className="text-sm tracking-[0.3em] uppercase text-stone-400 hover:text-stone-900 transition-colors"
           >
             New in
           </Link>
           <Link
             href="/contact"
-            className="text-[10px] tracking-[0.3em] uppercase text-stone-400 hover:text-stone-900 transition-colors"
+            className="text-sm tracking-[0.3em] uppercase text-stone-400 hover:text-stone-900 transition-colors"
           >
             Contact
           </Link>

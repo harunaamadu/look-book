@@ -31,7 +31,7 @@ export default async function ProductReviews({
       {/* Section header */}
       <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
         <div>
-          <p className="text-[10px] tracking-[0.5em] uppercase text-stone-400 mb-3">
+          <p className="text-xs tracking-[0.5em] uppercase text-stone-400 mb-3">
             Reviews
           </p>
           <h2

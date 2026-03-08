@@ -16,7 +16,7 @@ export default function AccordionItem({
         onClick={() => setOpen(!open)}
         className="w-full flex items-center justify-between py-4 text-left"
       >
-        <span className="text-[10px] tracking-[0.35em] uppercase text-stone-600">
+        <span className="text-xs tracking-[0.35em] uppercase text-stone-600">
           {label}
         </span>
         <svg

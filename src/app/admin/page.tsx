@@ -30,7 +30,7 @@ export default async function AdminPage() {
     <div className="flex flex-col gap-8">
       {/* Page title */}
       <div>
-        <p className="text-[10px] tracking-[0.5em] uppercase text-stone-600 mb-1">
+        <p className="text-xs tracking-[0.5em] uppercase text-stone-600 mb-1">
           Admin
         </p>
         <h1 className="text-3xl font-bold">Overview</h1>
@@ -43,7 +43,7 @@ export default async function AdminPage() {
             key={stat.label}
             className="bg-stone-100 border border-stone-200 p-5 flex flex-col gap-3"
           >
-            <p className="text-[10px] tracking-[0.35em] uppercase text-primary">
+            <p className="text-xs tracking-[0.35em] uppercase text-primary">
               {stat.label}
             </p>
             <div className="flex items-end justify-between gap-2">
@@ -72,7 +72,7 @@ export default async function AdminPage() {
             </h2>
             <Link
               href="/admin/orders"
-              className="text-[10px] tracking-[0.3em] uppercase text-stone-600 hover:text-white transition-colors"
+              className="text-xs tracking-[0.3em] uppercase text-stone-600 hover:text-white transition-colors"
             >
               View all →
             </Link>
@@ -106,7 +106,7 @@ export default async function AdminPage() {
                       <td className="px-4 py-3">
                         <Link
                           href={`/admin/orders/${order.id}`}
-                          className="text-[10px] tracking-widest transition-colors"
+                          className="text-xs tracking-widest transition-colors"
                         >
                           #{order.id.slice(-8).toUpperCase()}
                         </Link>
@@ -142,7 +142,7 @@ export default async function AdminPage() {
         <div className="flex flex-col gap-6">
           {/* Order status breakdown */}
           <div className="bg-stone-100 border border-stone-300 p-5 flex flex-col gap-4">
-            <h3 className="text-[10px] tracking-[0.4em] uppercase text-stone-500">
+            <h3 className="text-xs tracking-[0.4em] uppercase text-stone-500">
               Orders by status
             </h3>
             {data.ordersByStatus.map((s) => {
@@ -155,11 +155,11 @@ export default async function AdminPage() {
                 <div key={s.status} className="flex flex-col gap-1.5">
                   <div className="flex justify-between">
                     <span
-                      className={`text-[10px] tracking-[0.25em] uppercase ${config.color}`}
+                      className={`text-xs tracking-[0.25em] uppercase ${config.color}`}
                     >
                       {config.label}
                     </span>
-                    <span className="text-[10px] text-stone-500">
+                    <span className="text-xs text-stone-500">
                       {s._count}
                     </span>
                   </div>
@@ -176,7 +176,7 @@ export default async function AdminPage() {
 
           {/* Top products */}
           <div className="bg-stone-100 border border-stone-300 p-5 flex flex-col gap-4">
-            <h3 className="text-[10px] tracking-[0.4em] uppercase text-stone-500">
+            <h3 className="text-xs tracking-[0.4em] uppercase text-stone-500">
               Top products
             </h3>
             <div className="flex flex-col gap-3">
@@ -200,10 +200,10 @@ export default async function AdminPage() {
                     )}
                   </div>
                   <div className="flex-1 min-w-0">
-                    <p className="text-xs text-stone-300 truncate">
+                    <p className="text-sm text-stone-300 truncate">
                       {tp.product?.name ?? "Unknown"}
                     </p>
-                    <p className="text-[10px] text-stone-600">
+                    <p className="text-xs text-stone-600">
                       {tp._sum.quantity} sold
                     </p>
                   </div>
@@ -238,7 +238,7 @@ export default async function AdminPage() {
               >
                 {data.newUsersThisMonth}
               </p>
-              <p className="text-[10px] tracking-[0.3em] uppercase text-stone-600">
+              <p className="text-xs tracking-[0.3em] uppercase text-stone-600">
                 New users this month
               </p>
             </div>

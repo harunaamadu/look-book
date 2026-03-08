@@ -113,7 +113,7 @@ export default function AdminNotificationBell() {
                     />
                     <div className="flex-1 min-w-0">
                       <p className="text-xs text-green-600 mb-0.5">{n.title}</p>
-                      <p className="text-[11px] leading-relaxed">
+                      <p className="text-sm leading-relaxed">
                         {n.body}
                       </p>
                       <div className="flex items-center gap-3 mt-1.5">

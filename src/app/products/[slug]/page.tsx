@@ -58,7 +58,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
     <main className="min-h-screen bg-[#fafaf8]">
       {/* Breadcrumb */}
       <div className="max-w-7xl mx-auto px-6 pt-8 pb-0">
-        <nav className="flex items-center gap-2 text-[10px] tracking-[0.3em] uppercase text-stone-400">
+        <nav className="flex items-center gap-2 text-xs tracking-[0.3em] uppercase text-stone-400">
           <Link href="/" className="hover:text-stone-900 transition-colors">
             Home
           </Link>
@@ -135,7 +135,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
             {/* Description */}
             {product.description && (
               <div className="mt-10 pt-8 border-t border-stone-200">
-                <p className="text-[10px] tracking-[0.4em] uppercase text-stone-400 mb-3">
+                <p className="text-xs tracking-[0.4em] uppercase text-stone-400 mb-3">
                   Description
                 </p>
                 <p className="text-sm text-stone-600 leading-relaxed">

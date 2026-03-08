@@ -38,7 +38,7 @@ export default function ReviewFormWrapper({
         </div>
         <Link
           href="/login"
-          className="shrink-0 bg-stone-900 text-white px-6 py-3 text-[10px] tracking-[0.35em] uppercase hover:bg-stone-700 transition-colors"
+          className="shrink-0 bg-stone-900 text-white px-6 py-3 text-xs tracking-[0.35em] uppercase hover:bg-stone-700 transition-colors"
         >
           Sign in
         </Link>
@@ -61,7 +61,7 @@ export default function ReviewFormWrapper({
         </div>
         <button
           onClick={() => setOpen(true)}
-          className="shrink-0 text-[10px] tracking-[0.3em] uppercase text-stone-400 hover:text-stone-900 transition-colors border border-stone-200 px-4 py-2 hover:border-stone-900"
+          className="shrink-0 text-xs tracking-[0.3em] uppercase text-stone-400 hover:text-stone-900 transition-colors border border-stone-200 px-4 py-2 hover:border-stone-900"
         >
           Edit
         </button>
@@ -81,7 +81,7 @@ export default function ReviewFormWrapper({
         {open && userReview && (
           <button
             onClick={() => setOpen(false)}
-            className="text-[10px] tracking-[0.3em] uppercase text-stone-400 hover:text-stone-900 transition-colors"
+            className="text-xs tracking-[0.3em] uppercase text-stone-400 hover:text-stone-900 transition-colors"
           >
             Cancel
           </button>

@@ -65,7 +65,7 @@ export default function CartDrawer() {
               Your Bag
             </h2>
             {items.length > 0 && (
-              <span className="text-[10px] tracking-[0.3em] uppercase text-stone-400">
+              <span className="text-xs tracking-[0.3em] uppercase text-stone-400">
                 {items.reduce((s, i) => s + i.quantity, 0)} items
               </span>
             )}
@@ -106,7 +106,7 @@ export default function CartDrawer() {
               </div>
               <button
                 onClick={closeCart}
-                className="text-[10px] tracking-[0.35em] uppercase text-stone-500 underline underline-offset-4 hover:text-stone-900 transition-colors"
+                className="text-xs tracking-[0.35em] uppercase text-stone-500 underline underline-offset-4 hover:text-stone-900 transition-colors"
               >
                 Continue Shopping
               </button>
@@ -211,7 +211,7 @@ export default function CartDrawer() {
             {/* Totals */}
             <div className="flex flex-col gap-2 text-sm">
               <div className="flex justify-between text-stone-500">
-                <span className="text-[10px] tracking-[0.3em] uppercase">
+                <span className="text-xs tracking-[0.3em] uppercase">
                   Subtotal
                 </span>
 
@@ -220,7 +220,7 @@ export default function CartDrawer() {
               </div>
               {discountAmount > 0 && (
                 <div className="flex justify-between text-green-700">
-                  <span className="text-[10px] tracking-[0.3em] uppercase">
+                  <span className="text-xs tracking-[0.3em] uppercase">
                     Discount ({discount}%)
                   </span>
 
@@ -229,15 +229,15 @@ export default function CartDrawer() {
                 </div>
               )}
               <div className="flex justify-between text-stone-500">
-                <span className="text-[10px] tracking-[0.3em] uppercase">
+                <span className="text-xs tracking-[0.3em] uppercase">
                   Shipping
                 </span>
-                <span className="text-[10px] tracking-[0.2em] uppercase text-stone-400">
+                <span className="text-xs tracking-[0.2em] uppercase text-stone-400">
                   Calculated at checkout
                 </span>
               </div>
               <div className="flex justify-between font-medium text-stone-900 pt-2 border-t border-stone-100">
-                <span className="text-[10px] tracking-[0.3em] uppercase">
+                <span className="text-xs tracking-[0.3em] uppercase">
                   Total
                 </span>
                 {/* Total */}
@@ -249,14 +249,14 @@ export default function CartDrawer() {
             <Link
               href="/checkout"
               onClick={closeCart}
-              className="w-full bg-stone-900 text-white py-4 text-[11px] tracking-[0.35em] uppercase text-center hover:bg-stone-700 transition-colors"
+              className="w-full bg-stone-900 text-white py-4 text-sm tracking-[0.35em] uppercase text-center hover:bg-stone-700 transition-colors"
             >
               Proceed to Checkout
             </Link>
 
             <button
               onClick={closeCart}
-              className="text-[10px] tracking-[0.3em] uppercase text-stone-400 hover:text-stone-900 transition-colors text-center"
+              className="text-xs tracking-[0.3em] uppercase text-stone-400 hover:text-stone-900 transition-colors text-center"
             >
               Continue Shopping
             </button>

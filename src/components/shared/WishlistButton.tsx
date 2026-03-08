@@ -63,7 +63,7 @@ export default function WishlistButton({
     <button
       onClick={handleClick}
       disabled={isPending}
-      className={`flex items-center justify-center gap-2 py-3 border text-[10px] tracking-[0.3em] uppercase transition-all disabled:opacity-50 ${
+      className={`flex items-center justify-center gap-2 py-3 border text-xs tracking-[0.3em] uppercase transition-all disabled:opacity-50 ${
         wishlisted
           ? "border-stone-900 text-stone-900 bg-stone-50"
           : "border-stone-300 text-stone-500 hover:border-stone-900 hover:text-stone-900"

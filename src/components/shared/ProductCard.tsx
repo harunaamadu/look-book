@@ -103,7 +103,7 @@ export default function ProductCard({
             hovered ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
           }`}
         >
-          <span className="text-[10px] tracking-[0.35em] uppercase text-stone-50">
+          <span className="text-xs tracking-[0.35em] uppercase text-stone-50">
             Quick View
           </span>
         </div>

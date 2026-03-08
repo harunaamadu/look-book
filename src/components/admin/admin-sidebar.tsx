@@ -100,7 +100,7 @@ export default function AdminSidebar() {
             <Link
               key={item.href}
               href={item.href}
-              className={`flex items-center gap-3 px-3 py-2.5 text-[11px] tracking-[0.25em] uppercase transition-all duration-150 ${
+              className={`flex items-center gap-3 px-3 py-2.5 text-sm tracking-[0.25em] uppercase transition-all duration-150 ${
                 isActive
                   ? "bg-stone-800 text-white"
                   : "text-stone-500 hover:text-stone-200 hover:bg-stone-900"
@@ -117,13 +117,13 @@ export default function AdminSidebar() {
       <div className="p-4 border-t border-stone-800 flex flex-col gap-2">
         <Link
           href="/dashboard"
-          className="text-[10px] tracking-[0.3em] uppercase text-stone-600 hover:text-stone-300 transition-colors"
+          className="text-xs tracking-[0.3em] uppercase text-stone-600 hover:text-stone-300 transition-colors"
         >
           ← Dashboard
         </Link>
         <Link
           href="/"
-          className="text-[10px] tracking-[0.3em] uppercase text-stone-600 hover:text-stone-300 transition-colors"
+          className="text-xs tracking-[0.3em] uppercase text-stone-600 hover:text-stone-300 transition-colors"
         >
           ← Storefront
         </Link>

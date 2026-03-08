@@ -45,7 +45,7 @@ export default function PrivacyPage() {
         </Section>
 
         <div className="pt-4 border-t border-stone-200">
-          <p className="text-[10px] tracking-[0.3em] uppercase text-stone-400">
+          <p className="text-xs tracking-[0.3em] uppercase text-stone-400">
             Last updated — January {" "} {new Date().getFullYear()}
           </p>
         </div>

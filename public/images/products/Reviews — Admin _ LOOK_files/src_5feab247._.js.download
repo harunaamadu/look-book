@@ -575,7 +575,7 @@ function CartCoupon() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "text-[10px] tracking-[0.3em] uppercase text-green-700 font-medium",
+                            className: "text-xs tracking-[0.3em] uppercase text-green-700 font-medium",
                             children: [
                                 coupon,
                                 " applied"
@@ -631,7 +631,7 @@ function CartCoupon() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: handleApply,
                         disabled: loading || !code.trim(),
-                        className: "px-4 py-2 bg-stone-900 text-white text-[10px] tracking-[0.3em] uppercase hover:bg-stone-700 transition-colors disabled:opacity-50",
+                        className: "px-4 py-2 bg-stone-900 text-white text-xs tracking-[0.3em] uppercase hover:bg-stone-700 transition-colors disabled:opacity-50",
                         children: loading ? "..." : "Apply"
                     }, void 0, false, {
                         fileName: "[project]/src/components/cart/cart-coupon.tsx",
@@ -645,7 +645,7 @@ function CartCoupon() {
                 columnNumber: 7
             }, this),
             message && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                className: `text-[10px] tracking-wide ${message.ok ? "text-green-600" : "text-red-500"}`,
+                className: `text-xs tracking-wide ${message.ok ? "text-green-600" : "text-red-500"}`,
                 children: message.text
             }, void 0, false, {
                 fileName: "[project]/src/components/cart/cart-coupon.tsx",
@@ -741,7 +741,7 @@ function CartDrawer() {
                                         columnNumber: 13
                                     }, this),
                                     items.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-[10px] tracking-[0.3em] uppercase text-stone-400",
+                                        className: "text-xs tracking-[0.3em] uppercase text-stone-400",
                                         children: [
                                             items.reduce((s, i)=>s + i.quantity, 0),
                                             " items"
@@ -841,7 +841,7 @@ function CartDrawer() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: closeCart,
-                                    className: "text-[10px] tracking-[0.35em] uppercase text-stone-500 underline underline-offset-4 hover:text-stone-900 transition-colors",
+                                    className: "text-xs tracking-[0.35em] uppercase text-stone-500 underline underline-offset-4 hover:text-stone-900 transition-colors",
                                     children: "Continue Shopping"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/cart/cart-drawer.tsx",
@@ -1030,7 +1030,7 @@ function CartDrawer() {
                                         className: "flex justify-between text-stone-500",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-[10px] tracking-[0.3em] uppercase",
+                                                className: "text-xs tracking-[0.3em] uppercase",
                                                 children: "Subtotal"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/cart/cart-drawer.tsx",
@@ -1057,7 +1057,7 @@ function CartDrawer() {
                                         className: "flex justify-between text-green-700",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-[10px] tracking-[0.3em] uppercase",
+                                                className: "text-xs tracking-[0.3em] uppercase",
                                                 children: [
                                                     "Discount (",
                                                     discount,
@@ -1088,7 +1088,7 @@ function CartDrawer() {
                                         className: "flex justify-between text-stone-500",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-[10px] tracking-[0.3em] uppercase",
+                                                className: "text-xs tracking-[0.3em] uppercase",
                                                 children: "Shipping"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/cart/cart-drawer.tsx",
@@ -1096,7 +1096,7 @@ function CartDrawer() {
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-[10px] tracking-[0.2em] uppercase text-stone-400",
+                                                className: "text-xs tracking-[0.2em] uppercase text-stone-400",
                                                 children: "Calculated at checkout"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/cart/cart-drawer.tsx",
@@ -1113,7 +1113,7 @@ function CartDrawer() {
                                         className: "flex justify-between font-medium text-stone-900 pt-2 border-t border-stone-100",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-[10px] tracking-[0.3em] uppercase",
+                                                className: "text-xs tracking-[0.3em] uppercase",
                                                 children: "Total"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/cart/cart-drawer.tsx",
@@ -1145,7 +1145,7 @@ function CartDrawer() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: "/checkout",
                                 onClick: closeCart,
-                                className: "w-full bg-stone-900 text-white py-4 text-[11px] tracking-[0.35em] uppercase text-center hover:bg-stone-700 transition-colors",
+                                className: "w-full bg-stone-900 text-white py-4 text-sm tracking-[0.35em] uppercase text-center hover:bg-stone-700 transition-colors",
                                 children: "Proceed to Checkout"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/cart/cart-drawer.tsx",
@@ -1154,7 +1154,7 @@ function CartDrawer() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: closeCart,
-                                className: "text-[10px] tracking-[0.3em] uppercase text-stone-400 hover:text-stone-900 transition-colors text-center",
+                                className: "text-xs tracking-[0.3em] uppercase text-stone-400 hover:text-stone-900 transition-colors text-center",
                                 children: "Continue Shopping"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/cart/cart-drawer.tsx",
@@ -2341,7 +2341,7 @@ function Footer() {
                                         className: "flex flex-col gap-4",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-[10px] tracking-[0.45em] uppercase text-stone-500",
+                                                className: "text-xs tracking-[0.45em] uppercase text-stone-500",
                                                 children: group
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/shared/Footer.tsx",
@@ -2391,7 +2391,7 @@ function Footer() {
                         className: "max-w-7xl mx-auto px-6 py-5 border-t border-stone-800 flex flex-col sm:flex-row items-center justify-between gap-4",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-[10px] tracking-[0.4em] uppercase text-stone-600",
+                                className: "text-xs tracking-[0.4em] uppercase text-stone-600",
                                 children: "Secure Payments"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/shared/Footer.tsx",
@@ -2458,7 +2458,7 @@ function Footer() {
                             className: "max-w-7xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-3",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-[11px] tracking-wide text-stone-600",
+                                    className: "text-sm tracking-wide text-stone-600",
                                     children: [
                                         "© ",
                                         new Date().getFullYear(),
@@ -2486,7 +2486,7 @@ function Footer() {
                                         "Cookie Policy"
                                     ].map((label)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                             href: "#",
-                                            className: "text-[11px] tracking-wide text-stone-600 hover:text-stone-300 transition-colors",
+                                            className: "text-sm tracking-wide text-stone-600 hover:text-stone-300 transition-colors",
                                             children: label
                                         }, label, false, {
                                             fileName: "[project]/src/components/shared/Footer.tsx",
@@ -3143,7 +3143,7 @@ function CookieConsent() {
                                             className: "flex items-center gap-2",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-[11px] tracking-[0.3em] uppercase font-medium text-stone-700",
+                                                    className: "text-sm tracking-[0.3em] uppercase font-medium text-stone-700",
                                                     children: type.label
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/shared/CookieConsent.tsx",
@@ -3221,7 +3221,7 @@ function CookieConsent() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: handleAcceptAll,
-                                    className: "flex-1 bg-stone-900 text-white py-3 text-[11px] tracking-[0.3em] uppercase hover:bg-stone-700 transition-colors",
+                                    className: "flex-1 bg-stone-900 text-white py-3 text-sm tracking-[0.3em] uppercase hover:bg-stone-700 transition-colors",
                                     children: "Accept All"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/shared/CookieConsent.tsx",
@@ -3230,7 +3230,7 @@ function CookieConsent() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: handleRejectAll,
-                                    className: "flex-1 border border-stone-300 text-stone-600 py-3 text-[11px] tracking-[0.3em] uppercase hover:border-stone-900 hover:text-stone-900 transition-colors",
+                                    className: "flex-1 border border-stone-300 text-stone-600 py-3 text-sm tracking-[0.3em] uppercase hover:border-stone-900 hover:text-stone-900 transition-colors",
                                     children: "Reject All"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/shared/CookieConsent.tsx",
@@ -3248,7 +3248,7 @@ function CookieConsent() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>setShowDetails((s)=>!s),
-                                    className: "text-[10px] tracking-[0.3em] uppercase text-stone-400 hover:text-stone-900 transition-colors flex items-center gap-1.5",
+                                    className: "text-xs tracking-[0.3em] uppercase text-stone-400 hover:text-stone-900 transition-colors flex items-center gap-1.5",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                             width: "10",
@@ -3280,7 +3280,7 @@ function CookieConsent() {
                                 }, this),
                                 showDetails && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: handleSavePreferences,
-                                    className: "text-[10px] tracking-[0.3em] uppercase text-stone-700 underline underline-offset-2 hover:text-stone-900 transition-colors",
+                                    className: "text-xs tracking-[0.3em] uppercase text-stone-700 underline underline-offset-2 hover:text-stone-900 transition-colors",
                                     children: "Save preferences"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/shared/CookieConsent.tsx",

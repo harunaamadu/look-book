@@ -22,7 +22,7 @@ export default async function CollectionsPage() {
       {/* Header */}
       <div className="bg-white border-b border-stone-200">
         <div className="max-w-7xl mx-auto px-6 py-14">
-          <p className="text-[10px] tracking-[0.5em] uppercase text-stone-400 mb-4">
+          <p className="text-xs tracking-[0.5em] uppercase text-stone-400 mb-4">
             Browse by category
           </p>
           <h1
@@ -75,7 +75,7 @@ export default async function CollectionsPage() {
                     {cat.description}
                   </p>
                 )}
-                <span className="inline-flex items-center gap-2 text-[10px] tracking-[0.35em] uppercase text-white/80 group-hover:text-white transition-colors">
+                <span className="inline-flex items-center gap-2 text-xs tracking-[0.35em] uppercase text-white/80 group-hover:text-white transition-colors">
                   Shop now
                   <svg
                     width="12"

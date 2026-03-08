@@ -28,7 +28,7 @@ export default function ErrorPage({
           </span>
           <div className="absolute inset-0 flex items-center">
             <div className="w-12 h-px bg-stone-900 mr-4 shrink-0" />
-            <p className="text-[10px] tracking-[0.5em] uppercase text-stone-400">
+            <p className="text-sm tracking-[0.5em] uppercase text-stone-400">
               Something went wrong
             </p>
           </div>
@@ -49,7 +49,7 @@ export default function ErrorPage({
 
         {/* Error digest for support */}
         {error.digest && (
-          <p className="text-[10px] tracking-widest uppercase text-stone-300 mb-8 font-mono">
+          <p className="text-sm tracking-widest uppercase text-stone-300 mb-8 font-mono">
             Error ID: {error.digest}
           </p>
         )}
@@ -57,13 +57,13 @@ export default function ErrorPage({
         <div className="flex flex-col sm:flex-row gap-3">
           <button
             onClick={reset}
-            className="flex-1 bg-stone-900 text-white py-4 text-[11px] tracking-[0.35em] uppercase hover:bg-stone-700 transition-colors"
+            className="flex-1 bg-stone-900 text-white py-4 text-sm tracking-[0.35em] uppercase hover:bg-stone-700 transition-colors"
           >
             Try again
           </button>
           <Link
             href="/"
-            className="flex-1 border border-stone-300 text-stone-600 py-4 text-[11px] tracking-[0.35em] uppercase text-center hover:border-stone-900 hover:text-stone-900 transition-all"
+            className="flex-1 border border-stone-300 text-stone-600 py-4 text-sm tracking-[0.35em] uppercase text-center hover:border-stone-900 hover:text-stone-900 transition-all"
           >
             Return home
           </Link>
@@ -72,13 +72,13 @@ export default function ErrorPage({
         <div className="mt-10 pt-8 border-t border-stone-200 flex items-center gap-6">
           <Link
             href="/contact"
-            className="text-[10px] tracking-[0.3em] uppercase text-stone-400 hover:text-stone-900 transition-colors"
+            className="text-sm tracking-[0.3em] uppercase text-stone-400 hover:text-stone-900 transition-colors"
           >
             Contact support
           </Link>
           <Link
             href="/faq"
-            className="text-[10px] tracking-[0.3em] uppercase text-stone-400 hover:text-stone-900 transition-colors"
+            className="text-sm tracking-[0.3em] uppercase text-stone-400 hover:text-stone-900 transition-colors"
           >
             View FAQ
           </Link>

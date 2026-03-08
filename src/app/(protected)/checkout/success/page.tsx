@@ -22,7 +22,7 @@ export default async function CheckoutSuccessPage({
           <span className="absolute inset-0 rounded-full animate-ping bg-stone-200 opacity-40" />
         </div>
 
-        <p className="text-[10px] tracking-[0.5em] uppercase text-stone-400 mb-3">
+        <p className="text-xs tracking-[0.5em] uppercase text-stone-400 mb-3">
           Order confirmed
         </p>
         <h1
@@ -43,13 +43,13 @@ export default async function CheckoutSuccessPage({
         <div className="flex flex-col gap-3">
           <Link
             href="/products"
-            className="w-full bg-stone-900 text-white py-4 text-[11px] tracking-[0.35em] uppercase hover:bg-stone-700 transition-colors"
+            className="w-full bg-stone-900 text-white py-4 text-sm tracking-[0.35em] uppercase hover:bg-stone-700 transition-colors"
           >
             Continue Shopping
           </Link>
           <Link
             href="/dashboard/orders"
-            className="w-full border border-stone-300 text-stone-600 py-4 text-[11px] tracking-[0.35em] uppercase hover:border-stone-900 hover:text-stone-900 transition-colors"
+            className="w-full border border-stone-300 text-stone-600 py-4 text-sm tracking-[0.35em] uppercase hover:border-stone-900 hover:text-stone-900 transition-colors"
           >
             View Orders
           </Link>

@@ -74,7 +74,7 @@ export default function HeroCarousel({ slides }: { slides: HeroSlide[] }) {
           {/* ── LEFT ── */}
           <div className="flex flex-col justify-between h-fit py-6 lg:py-20">
             <div>
-              <p className="hidden md:block text-[10px] tracking-[0.5em] uppercase text-stone-400 mb-10">
+              <p className="hidden md:block text-xs tracking-[0.5em] uppercase text-stone-400 mb-10">
                 Spring / Summer 2025
               </p>
               <h1 className="font-bold text-[14vw] lg:text-[4.5rem] leading-tight lg:leading-16 tracking-tight text-stone-900">
@@ -90,7 +90,7 @@ export default function HeroCarousel({ slides }: { slides: HeroSlide[] }) {
               <div className="flex flex-col gap-3">
                 <Link
                   href="/products"
-                  className="group inline-flex items-center gap-3 bg-stone-900 text-stone-50 px-7 py-3.5 text-[11px] tracking-[0.25em] uppercase transition-all hover:bg-stone-700 w-fit"
+                  className="group inline-flex items-center gap-3 bg-stone-900 text-stone-50 px-7 py-3.5 text-sm tracking-[0.25em] uppercase transition-all hover:bg-stone-700 w-fit"
                 >
                   Shop Collection
                   <svg
@@ -109,7 +109,7 @@ export default function HeroCarousel({ slides }: { slides: HeroSlide[] }) {
                 </Link>
                 <Link
                   href="/products?category=new"
-                  className="inline-flex items-center gap-2 text-[11px] tracking-[0.25em] uppercase text-stone-500 hover:text-stone-900 transition-colors w-fit"
+                  className="inline-flex items-center gap-2 text-sm tracking-[0.25em] uppercase text-stone-500 hover:text-stone-900 transition-colors w-fit"
                 >
                   <span className="w-4 h-px bg-stone-400" />
                   New Arrivals
@@ -154,8 +154,7 @@ export default function HeroCarousel({ slides }: { slides: HeroSlide[] }) {
                       <Image
                         src={slide.src}
                         alt={slide.label}
-                        width={400}
-                        height={500}
+                        fill
                         className="object-contain h-full"
                         priority={index === 0}
                       />

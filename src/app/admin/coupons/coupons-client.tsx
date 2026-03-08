@@ -50,10 +50,10 @@ export default function AdminCouponsClient({ coupons }: { coupons: any[] }) {
     <div className="flex flex-col gap-6">
       <div className="flex items-center justify-between">
         <div>
-          <p className="text-[10px] tracking-[0.5em] uppercase text-stone-600 mb-1">Admin</p>
+          <p className="text-xs tracking-[0.5em] uppercase text-stone-600 mb-1">Admin</p>
           <h1 className="text-3xl font-light text-white" style={{ fontFamily: "Georgia, serif" }}>Coupons</h1>
         </div>
-        <button onClick={() => setShowForm(!showForm)} className="bg-white text-stone-900 px-5 py-2.5 text-[10px] tracking-[0.35em] uppercase hover:bg-stone-100">
+        <button onClick={() => setShowForm(!showForm)} className="bg-white text-stone-900 px-5 py-2.5 text-xs tracking-[0.35em] uppercase hover:bg-stone-100">
           + New coupon
         </button>
       </div>
@@ -65,8 +65,8 @@ export default function AdminCouponsClient({ coupons }: { coupons: any[] }) {
           <AdminField label="Max uses (blank = unlimited)" name="maxUses" type="number" />
           <AdminField label="Expires at" name="expiresAt" type="date" />
           <div className="md:col-span-2 flex gap-3 justify-end">
-            <button type="button" onClick={() => setShowForm(false)} className="px-5 py-2.5 border border-stone-700 text-stone-400 text-[10px] tracking-[0.3em] uppercase">Cancel</button>
-            <button type="submit" className="px-5 py-2.5 bg-white text-stone-900 text-[10px] tracking-[0.35em] uppercase">Create</button>
+            <button type="button" onClick={() => setShowForm(false)} className="px-5 py-2.5 border border-stone-700 text-stone-400 text-xs tracking-[0.3em] uppercase">Cancel</button>
+            <button type="submit" className="px-5 py-2.5 bg-white text-stone-900 text-xs tracking-[0.35em] uppercase">Create</button>
           </div>
         </form>
       )}
@@ -101,10 +101,10 @@ export default function AdminCouponsClient({ coupons }: { coupons: any[] }) {
                     </span>
                   </td>
                   <td className="px-4 py-3 flex gap-3">
-                    <button onClick={() => handleToggle(c.id, c.isActive)} className="text-[10px] tracking-[0.2em] uppercase text-stone-500 hover:text-white transition-colors">
+                    <button onClick={() => handleToggle(c.id, c.isActive)} className="text-xs tracking-[0.2em] uppercase text-stone-500 hover:text-white transition-colors">
                       {c.isActive ? "Disable" : "Enable"}
                     </button>
-                    <button onClick={() => handleDelete(c.id)} className="text-[10px] tracking-[0.2em] uppercase text-red-600 hover:text-red-400 transition-colors">
+                    <button onClick={() => handleDelete(c.id)} className="text-xs tracking-[0.2em] uppercase text-red-600 hover:text-red-400 transition-colors">
                       Delete
                     </button>
                   </td>

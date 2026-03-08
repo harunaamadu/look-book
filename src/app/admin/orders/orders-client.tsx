@@ -45,7 +45,7 @@ export default function AdminOrdersClient({
     <div className="flex flex-col gap-6">
       <div className="flex items-center justify-between">
         <div>
-          <p className="text-[10px] tracking-[0.5em] uppercase text-stone-600 mb-1">Admin</p>
+          <p className="text-xs tracking-[0.5em] uppercase text-stone-600 mb-1">Admin</p>
           <h1 className="text-3xl font-normal">
             Orders <span className="text-stone-600 text-xl">({total})</span>
           </h1>
@@ -60,7 +60,7 @@ export default function AdminOrdersClient({
             <button
               key={s}
               onClick={() => setStatus(s)}
-              className={`px-4 py-2 text-[10px] tracking-[0.3em] uppercase transition-all ${
+              className={`px-4 py-2 text-xs tracking-[0.3em] uppercase transition-all ${
                 activeStatus === s
                   ? "bg-white text-stone-900"
                   : "bg-stone-100 border border-stone-300  text-stone-400 hover:text-inherit"
@@ -90,7 +90,7 @@ export default function AdminOrdersClient({
               return (
                 <tr key={order.id} className="hover:bg-stone-800/40 transition-colors">
                   <td className="px-4 py-3">
-                    <Link href={`/admin/orders/${order.id}`} className="text-[10px] tracking-widest text-amber-500 hover:text-amber-300 transition-colors">
+                    <Link href={`/admin/orders/${order.id}`} className="text-xs tracking-widest text-amber-500 hover:text-amber-300 transition-colors">
                       #{order.id.slice(-8).toUpperCase()}
                     </Link>
                   </td>
@@ -113,7 +113,7 @@ export default function AdminOrdersClient({
                     <select
                       defaultValue={order.status}
                       onChange={(e) => handleStatusChange(order.id, e.target.value)}
-                      className="bg-stone-800 border border-stone-700 text-stone-300 text-[10px] tracking-wide px-2 py-1.5 focus:outline-none focus:border-stone-500"
+                      className="bg-stone-800 border border-stone-700 text-stone-300 text-xs tracking-wide px-2 py-1.5 focus:outline-none focus:border-stone-500"
                     >
                       {allStatuses.map((s) => (
                         <option key={s} value={s}>{statusConfig[s]?.label ?? s}</option>

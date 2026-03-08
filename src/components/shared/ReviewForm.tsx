@@ -121,7 +121,7 @@ export default function ReviewForm({
           maxLength={1000}
           className="border border-stone-200 bg-transparent px-4 py-3 text-sm text-stone-900 placeholder:text-stone-300 focus:outline-none focus:border-stone-900 transition-colors resize-none"
         />
-        <p className="text-[10px] text-stone-300 text-right">
+        <p className="text-xs text-stone-300 text-right">
           {body.length}/1000
         </p>
       </div>
@@ -130,7 +130,7 @@ export default function ReviewForm({
         <button
           type="submit"
           disabled={loading || !rating}
-          className="flex-1 bg-stone-900 text-white py-3 text-[11px] tracking-[0.35em] uppercase hover:bg-stone-700 transition-colors disabled:opacity-50"
+          className="flex-1 bg-stone-900 text-white py-3 text-sm tracking-[0.35em] uppercase hover:bg-stone-700 transition-colors disabled:opacity-50"
         >
           {loading ? "Submitting..." : existingReview ? "Update review" : "Submit review"}
         </button>
@@ -138,7 +138,7 @@ export default function ReviewForm({
           <button
             type="button"
             onClick={onClose}
-            className="px-6 border border-stone-200 text-stone-500 text-[11px] tracking-[0.3em] uppercase hover:border-stone-900 hover:text-stone-900 transition-all"
+            className="px-6 border border-stone-200 text-stone-500 text-sm tracking-[0.3em] uppercase hover:border-stone-900 hover:text-stone-900 transition-all"
           >
             Cancel
           </button>

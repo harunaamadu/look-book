@@ -104,15 +104,15 @@ export default function CareersPage() {
                     {role.title}
                   </p>
                   <div className="flex items-center gap-3 flex-wrap">
-                    <span className="text-[10px] tracking-[0.3em] uppercase text-stone-400">
+                    <span className="text-xs tracking-[0.3em] uppercase text-stone-400">
                       {role.team}
                     </span>
                     <span className="text-stone-300">·</span>
-                    <span className="text-[10px] tracking-[0.3em] uppercase text-stone-500">
+                    <span className="text-xs tracking-[0.3em] uppercase text-stone-500">
                       {role.location}
                     </span>
                     <span className="text-stone-300">·</span>
-                    <span className="text-[10px] tracking-[0.3em] uppercase text-stone-400">
+                    <span className="text-xs tracking-[0.3em] uppercase text-stone-400">
                       {role.type}
                     </span>
                   </div>
@@ -139,7 +139,7 @@ export default function CareersPage() {
 
         {/* Speculative */}
         <div className="border border-stone-700 p-8 flex flex-col gap-4">
-          <p className="text-[10px] tracking-[0.5em] uppercase text-stone-400">
+          <p className="text-sm tracking-[0.5em] uppercase text-stone-400">
             Don't see your role?
           </p>
           <p
@@ -153,7 +153,7 @@ export default function CareersPage() {
           </p>
           <a
             href="mailto:careers@look.com"
-            className="self-start bg-white text-stone-900 px-7 py-3 text-[10px] tracking-[0.35em] uppercase hover:bg-stone-200 transition-colors mt-2"
+            className="self-start bg-white text-stone-900 px-7 py-3 text-xs tracking-[0.35em] uppercase hover:bg-stone-200 transition-colors mt-2"
           >
             Get in touch
           </a>

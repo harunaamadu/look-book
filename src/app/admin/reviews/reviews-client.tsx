@@ -25,7 +25,7 @@ export default function AdminReviewsClient({ reviews, total, pages, currentPage 
   return (
     <div className="flex flex-col gap-6">
       <div>
-        <p className="text-[10px] tracking-[0.5em] uppercase text-stone-600 mb-1">Admin</p>
+        <p className="text-xs tracking-[0.5em] uppercase text-stone-600 mb-1">Admin</p>
         <h1 className="text-3xl font-normal">
           Reviews <span className="text-stone-600 text-xl">({total})</span>
         </h1>
@@ -38,22 +38,22 @@ export default function AdminReviewsClient({ reviews, total, pages, currentPage 
               <div className="flex flex-col gap-1">
                 <div className="flex items-center gap-3">
                   <StarRating rating={r.rating} size="sm" />
-                  <span className="text-[10px] tracking-[0.3em] uppercase text-stone-500">
+                  <span className="text-xs tracking-[0.3em] uppercase text-stone-500">
                     {new Date(r.createdAt).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}
                   </span>
                 </div>
                 {r.title && <p className="text-sm">{r.title}</p>}
                 <p className="text-xs text-stone-400 leading-relaxed max-w-2xl">{r.body}</p>
               </div>
-              <button onClick={() => handleDelete(r.id)} className="shrink-0 text-[10px] tracking-[0.2em] uppercase text-red-600 hover:text-red-400 transition-colors">
+              <button onClick={() => handleDelete(r.id)} className="shrink-0 text-xs tracking-[0.2em] uppercase text-red-600 hover:text-red-400 transition-colors">
                 Delete
               </button>
             </div>
             <div className="flex items-center gap-6 pt-2 border-t border-stone-800">
-              <div className="text-[10px] text-stone-600">
+              <div className="text-xs text-stone-600">
                 By: <span className="text-stone-400">{r.user.name ?? r.user.email}</span>
               </div>
-              <div className="text-[10px] text-stone-600">
+              <div className="text-xs text-stone-600">
                 Product:{" "}
                 <Link href={`/products/${r.product.slug}`} target="_blank" className="text-amber-500 hover:text-amber-300 transition-colors">
                   {r.product.name}

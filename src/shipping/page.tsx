@@ -67,7 +67,7 @@ export default function ShippingPage() {
       {/* Hero */}
       <div className="bg-white border-b border-stone-200">
         <div className="max-w-7xl mx-auto px-6 py-16">
-          <p className="text-[10px] tracking-[0.5em] uppercase text-stone-400 mb-4">
+          <p className="text-xs tracking-[0.5em] uppercase text-stone-400 mb-4">
             Delivery & Returns
           </p>
           <h1
@@ -86,7 +86,7 @@ export default function ShippingPage() {
         <section>
           <div className="flex items-end justify-between mb-10">
             <div>
-              <p className="text-[10px] tracking-[0.5em] uppercase text-stone-400 mb-3">
+              <p className="text-xs tracking-[0.5em] uppercase text-stone-400 mb-3">
                 Delivery
               </p>
               <h2
@@ -105,7 +105,7 @@ export default function ShippingPage() {
             {shippingOptions.map((opt) => (
               <div key={opt.name} className="bg-[#fafaf8] p-7 flex flex-col gap-4">
                 <div>
-                  <p className="text-[10px] tracking-[0.4em] uppercase text-stone-400 mb-2">
+                  <p className="text-xs tracking-[0.4em] uppercase text-stone-400 mb-2">
                     {opt.regions}
                   </p>
                   <h3
@@ -118,11 +118,11 @@ export default function ShippingPage() {
                 <div className="h-px bg-stone-200" />
                 <div className="flex flex-col gap-2">
                   <div className="flex justify-between items-center">
-                    <span className="text-[10px] tracking-[0.3em] uppercase text-stone-400">Time</span>
+                    <span className="text-xs tracking-[0.3em] uppercase text-stone-400">Time</span>
                     <span className="text-xs text-stone-700">{opt.time}</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-[10px] tracking-[0.3em] uppercase text-stone-400">Cost</span>
+                    <span className="text-xs tracking-[0.3em] uppercase text-stone-400">Cost</span>
                     <span className="text-xs text-stone-700">{opt.price}</span>
                   </div>
                   {opt.free && (
@@ -152,7 +152,7 @@ export default function ShippingPage() {
         {/* Returns */}
         <section>
           <div className="mb-10">
-            <p className="text-[10px] tracking-[0.5em] uppercase text-stone-400 mb-3">
+            <p className="text-xs tracking-[0.5em] uppercase text-stone-400 mb-3">
               Returns
             </p>
             <h2
@@ -211,7 +211,7 @@ export default function ShippingPage() {
               },
             ].map((col) => (
               <div key={col.title} className="bg-white border border-stone-200 p-7">
-                <p className="text-[10px] tracking-[0.4em] uppercase text-stone-400 mb-5">
+                <p className="text-xs tracking-[0.4em] uppercase text-stone-400 mb-5">
                   {col.title}
                 </p>
                 <ul className="flex flex-col gap-3">
@@ -245,13 +245,13 @@ export default function ShippingPage() {
           <div className="flex gap-3">
             <Link
               href="/faq"
-              className="border border-stone-600 text-white px-6 py-3 text-[10px] tracking-[0.35em] uppercase hover:bg-stone-800 transition-colors"
+              className="border border-stone-600 text-white px-6 py-3 text-xs tracking-[0.35em] uppercase hover:bg-stone-800 transition-colors"
             >
               View FAQ
             </Link>
             <Link
               href="/contact"
-              className="bg-white text-stone-900 px-6 py-3 text-[10px] tracking-[0.35em] uppercase hover:bg-stone-100 transition-colors"
+              className="bg-white text-stone-900 px-6 py-3 text-xs tracking-[0.35em] uppercase hover:bg-stone-100 transition-colors"
             >
               Contact us
             </Link>

@@ -29,7 +29,7 @@ export default function SortSelect({
       <select
         defaultValue={sort ?? "newest"}
         onChange={handleChange}
-        className="text-[10px] tracking-[0.2em] uppercase border border-stone-200 bg-transparent px-3 py-1.5 text-stone-600 focus:outline-none focus:border-stone-900 transition-colors"
+        className="text-xs tracking-[0.2em] uppercase border border-stone-200 bg-transparent px-3 py-1.5 text-stone-600 focus:outline-none focus:border-stone-900 transition-colors"
       >
         <option value="newest">Newest</option>
         <option value="price-asc">Price: Low to High</option>

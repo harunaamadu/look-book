@@ -77,7 +77,7 @@ export default function ReviewList({
                   <p className="text-sm text-stone-900">
                     {review.user.name ?? "Anonymous"}
                   </p>
-                  <p className="text-[10px] text-stone-400 tracking-wide">
+                  <p className="text-xs text-stone-400 tracking-wide">
                     {new Date(review.createdAt).toLocaleDateString("en-GB", {
                       day: "numeric",
                       month: "long",

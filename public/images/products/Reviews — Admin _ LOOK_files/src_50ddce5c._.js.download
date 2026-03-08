@@ -143,7 +143,7 @@ function AdminCategoriesClient({ categories }) {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-[10px] tracking-[0.5em] uppercase text-stone-600 mb-1",
+                                className: "text-xs tracking-[0.5em] uppercase text-stone-600 mb-1",
                                 children: "Admin"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/admin/categories/categories-client.tsx",
@@ -169,7 +169,7 @@ function AdminCategoriesClient({ categories }) {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: ()=>setShowForm(!showForm),
-                        className: "bg-white text-stone-900 px-5 py-2.5 text-[10px] tracking-[0.35em] uppercase hover:bg-stone-100 transition-colors",
+                        className: "bg-white text-stone-900 px-5 py-2.5 text-xs tracking-[0.35em] uppercase hover:bg-stone-100 transition-colors",
                         children: "+ New category"
                     }, void 0, false, {
                         fileName: "[project]/src/app/admin/categories/categories-client.tsx",
@@ -224,7 +224,7 @@ function AdminCategoriesClient({ categories }) {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 type: "button",
                                 onClick: ()=>setShowForm(false),
-                                className: "px-5 py-2.5 border border-stone-700 text-stone-400 text-[10px] tracking-[0.3em] uppercase hover:border-stone-500",
+                                className: "px-5 py-2.5 border border-stone-700 text-stone-400 text-xs tracking-[0.3em] uppercase hover:border-stone-500",
                                 children: "Cancel"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/admin/categories/categories-client.tsx",
@@ -233,7 +233,7 @@ function AdminCategoriesClient({ categories }) {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 type: "submit",
-                                className: "px-5 py-2.5 bg-white text-stone-900 text-[10px] tracking-[0.35em] uppercase hover:bg-stone-100",
+                                className: "px-5 py-2.5 bg-white text-stone-900 text-xs tracking-[0.35em] uppercase hover:bg-stone-100",
                                 children: "Create"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/admin/categories/categories-client.tsx",
@@ -297,7 +297,7 @@ function AdminCategoriesClient({ categories }) {
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                            className: "px-4 py-3 text-[10px] text-stone-500 font-mono",
+                                            className: "px-4 py-3 text-xs text-stone-500 font-mono",
                                             children: cat.slug
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/admin/categories/categories-client.tsx",
@@ -316,7 +316,7 @@ function AdminCategoriesClient({ categories }) {
                                             className: "px-4 py-3",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                 onClick: ()=>handleDelete(cat.id),
-                                                className: "text-[10px] tracking-[0.2em] uppercase text-red-600 hover:text-red-400 transition-colors",
+                                                className: "text-xs tracking-[0.2em] uppercase text-red-600 hover:text-red-400 transition-colors",
                                                 children: "Delete"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/admin/categories/categories-client.tsx",

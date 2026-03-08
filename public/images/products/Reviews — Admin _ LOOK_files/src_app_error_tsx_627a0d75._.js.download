@@ -53,7 +53,7 @@ function ErrorPage({ error, reset }) {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-[10px] tracking-[0.5em] uppercase text-stone-400",
+                                    className: "text-xs tracking-[0.5em] uppercase text-stone-400",
                                     children: "Something went wrong"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/error.tsx",
@@ -103,7 +103,7 @@ function ErrorPage({ error, reset }) {
                     columnNumber: 9
                 }, this),
                 error.digest && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                    className: "text-[10px] tracking-widest uppercase text-stone-300 mb-8 font-mono",
+                    className: "text-xs tracking-widest uppercase text-stone-300 mb-8 font-mono",
                     children: [
                         "Error ID: ",
                         error.digest
@@ -118,7 +118,7 @@ function ErrorPage({ error, reset }) {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             onClick: reset,
-                            className: "flex-1 bg-stone-900 text-white py-4 text-[11px] tracking-[0.35em] uppercase hover:bg-stone-700 transition-colors",
+                            className: "flex-1 bg-stone-900 text-white py-4 text-sm tracking-[0.35em] uppercase hover:bg-stone-700 transition-colors",
                             children: "Try again"
                         }, void 0, false, {
                             fileName: "[project]/src/app/error.tsx",
@@ -127,7 +127,7 @@ function ErrorPage({ error, reset }) {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             href: "/",
-                            className: "flex-1 border border-stone-300 text-stone-600 py-4 text-[11px] tracking-[0.35em] uppercase text-center hover:border-stone-900 hover:text-stone-900 transition-all",
+                            className: "flex-1 border border-stone-300 text-stone-600 py-4 text-sm tracking-[0.35em] uppercase text-center hover:border-stone-900 hover:text-stone-900 transition-all",
                             children: "Return home"
                         }, void 0, false, {
                             fileName: "[project]/src/app/error.tsx",
@@ -145,7 +145,7 @@ function ErrorPage({ error, reset }) {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             href: "/contact",
-                            className: "text-[10px] tracking-[0.3em] uppercase text-stone-400 hover:text-stone-900 transition-colors",
+                            className: "text-xs tracking-[0.3em] uppercase text-stone-400 hover:text-stone-900 transition-colors",
                             children: "Contact support"
                         }, void 0, false, {
                             fileName: "[project]/src/app/error.tsx",
@@ -154,7 +154,7 @@ function ErrorPage({ error, reset }) {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             href: "/faq",
-                            className: "text-[10px] tracking-[0.3em] uppercase text-stone-400 hover:text-stone-900 transition-colors",
+                            className: "text-xs tracking-[0.3em] uppercase text-stone-400 hover:text-stone-900 transition-colors",
                             children: "View FAQ"
                         }, void 0, false, {
                             fileName: "[project]/src/app/error.tsx",

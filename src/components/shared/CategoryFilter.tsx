@@ -31,7 +31,7 @@ export default function CategoryFilter({
     <div className="flex flex-wrap items-center gap-2">
       <button
         onClick={() => navigate("all")}
-        className={`px-4 py-2 text-[10px] tracking-[0.3em] uppercase transition-all border ${
+        className={`px-4 py-2 text-xs tracking-[0.3em] uppercase transition-all border ${
           active === "all"
             ? "bg-stone-900 text-white border-stone-900"
             : "border-stone-300 text-stone-500 hover:border-stone-900 hover:text-stone-900"
@@ -43,7 +43,7 @@ export default function CategoryFilter({
         <button
           key={cat.id}
           onClick={() => navigate(cat.slug)}
-          className={`px-4 py-2 text-[10px] tracking-[0.3em] uppercase transition-all border ${
+          className={`px-4 py-2 text-xs tracking-[0.3em] uppercase transition-all border ${
             active === cat.slug
               ? "bg-stone-900 text-white border-stone-900"
               : "border-stone-300 text-stone-500 hover:border-stone-900 hover:text-stone-900"

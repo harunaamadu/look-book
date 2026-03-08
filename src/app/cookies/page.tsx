@@ -65,8 +65,8 @@ export default function CookiesPage() {
                   {type.required ? "Required" : "Optional"}
                 </span>
               </div>
-              <p className="text-stone-500 text-xs leading-relaxed">{type.description}</p>
-              <p className="text-[10px] tracking-wide text-stone-400">
+              <p className="text-stone-500 text-sm leading-relaxed">{type.description}</p>
+              <p className="text-xs tracking-wide text-stone-400">
                 <span className="uppercase tracking-[0.3em]">Examples: </span>
                 {type.examples}
               </p>
@@ -83,8 +83,8 @@ export default function CookiesPage() {
         </Section>
 
         <div className="pt-4 border-t border-stone-200">
-          <p className="text-[10px] tracking-[0.3em] uppercase text-stone-400">
-            Last updated — January 2025
+          <p className="text-xs tracking-[0.3em] uppercase text-stone-400">
+            Last updated — January {" "} {new Date().getFullYear()}
           </p>
         </div>
       </div>

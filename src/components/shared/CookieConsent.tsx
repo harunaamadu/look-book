@@ -135,7 +135,7 @@ export default function CookieConsent() {
               <div key={type.key} className="flex items-start justify-between gap-4">
                 <div className="flex flex-col gap-1 flex-1">
                   <div className="flex items-center gap-2">
-                    <p className="text-[11px] tracking-[0.3em] uppercase font-medium text-stone-700">
+                    <p className="text-sm tracking-[0.3em] uppercase font-medium text-stone-700">
                       {type.label}
                     </p>
                     {type.required && (
@@ -176,13 +176,13 @@ export default function CookieConsent() {
           <div className="flex gap-3">
             <button
               onClick={handleAcceptAll}
-              className="flex-1 bg-stone-900 text-white py-3 text-[11px] tracking-[0.3em] uppercase hover:bg-stone-700 transition-colors"
+              className="flex-1 bg-stone-900 text-white py-3 text-sm tracking-[0.3em] uppercase hover:bg-stone-700 transition-colors"
             >
               Accept All
             </button>
             <button
               onClick={handleRejectAll}
-              className="flex-1 border border-stone-300 text-stone-600 py-3 text-[11px] tracking-[0.3em] uppercase hover:border-stone-900 hover:text-stone-900 transition-colors"
+              className="flex-1 border border-stone-300 text-stone-600 py-3 text-sm tracking-[0.3em] uppercase hover:border-stone-900 hover:text-stone-900 transition-colors"
             >
               Reject All
             </button>
@@ -192,7 +192,7 @@ export default function CookieConsent() {
           <div className="flex items-center justify-between">
             <button
               onClick={() => setShowDetails((s) => !s)}
-              className="text-[10px] tracking-[0.3em] uppercase text-stone-400 hover:text-stone-900 transition-colors flex items-center gap-1.5"
+              className="text-xs tracking-[0.3em] uppercase text-stone-400 hover:text-stone-900 transition-colors flex items-center gap-1.5"
             >
               <svg
                 width="10" height="10" viewBox="0 0 10 10" fill="none"
@@ -206,7 +206,7 @@ export default function CookieConsent() {
             {showDetails && (
               <button
                 onClick={handleSavePreferences}
-                className="text-[10px] tracking-[0.3em] uppercase text-stone-700 underline underline-offset-2 hover:text-stone-900 transition-colors"
+                className="text-xs tracking-[0.3em] uppercase text-stone-700 underline underline-offset-2 hover:text-stone-900 transition-colors"
               >
                 Save preferences
               </button>

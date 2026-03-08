@@ -29,7 +29,7 @@ export default function LegalLayout({
       <div className={`border-b ${dark ? "border-stone-800 bg-[#141412]" : "border-stone-200 bg-white"}`}>
         <div className="max-w-5xl mx-auto px-6 py-16">
           {eyebrow && (
-            <p className={`text-[10px] tracking-[0.55em] uppercase mb-4 ${dark ? "text-stone-400" : "text-stone-400"}`}>
+            <p className={`text-xs tracking-[0.55em] uppercase mb-4 ${dark ? "text-stone-400" : "text-stone-400"}`}>
               {eyebrow}
             </p>
           )}
@@ -56,7 +56,7 @@ export default function LegalLayout({
               <Link
                 key={p.href}
                 href={p.href}
-                className={`shrink-0 px-3 py-2.5 text-[10px] tracking-[0.3em] uppercase transition-colors ${
+                className={`shrink-0 px-3 py-2.5 text-xs tracking-[0.3em] uppercase transition-colors ${
                   dark
                     ? "text-stone-300 hover:text-white"
                     : "text-stone-400 hover:text-stone-900"

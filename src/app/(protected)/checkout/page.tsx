@@ -11,7 +11,7 @@ export default async function CheckoutPage() {
       <div className="max-w-6xl mx-auto px-6 py-12">
         {/* Header */}
         <div className="mb-10">
-          <p className="text-[10px] tracking-[0.5em] uppercase text-stone-400 mb-2">
+          <p className="text-xs tracking-[0.5em] uppercase text-stone-400 mb-2">
             Secure Checkout
           </p>
           <h1

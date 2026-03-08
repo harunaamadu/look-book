@@ -39,7 +39,7 @@ export default function CartCoupon() {
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
             <path d="M2 6l3 3 5-5" stroke="#15803d" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
-          <span className="text-[10px] tracking-[0.3em] uppercase text-green-700 font-medium">
+          <span className="text-xs tracking-[0.3em] uppercase text-green-700 font-medium">
             {coupon} applied
           </span>
         </div>
@@ -66,7 +66,7 @@ export default function CartCoupon() {
       <button
         onClick={handleApply}
         disabled={loading || !code.trim()}
-        className="px-4 py-2 bg-stone-900 text-white text-[10px] tracking-[0.3em] uppercase hover:bg-stone-700 transition-colors disabled:opacity-50"
+        className="px-4 py-2 bg-stone-900 text-white text-xs tracking-[0.3em] uppercase hover:bg-stone-700 transition-colors disabled:opacity-50"
       >
         {loading ? "..." : "Apply"}
       </button>

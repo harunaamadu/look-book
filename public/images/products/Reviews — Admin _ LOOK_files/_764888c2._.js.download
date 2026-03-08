@@ -284,7 +284,7 @@ function AdminSidebar() {
                     const isActive = item.href === "/admin" ? pathname === "/admin" : pathname.startsWith(item.href);
                     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                         href: item.href,
-                        className: `flex items-center gap-3 px-3 py-2.5 text-[11px] tracking-[0.25em] uppercase transition-all duration-150 ${isActive ? "bg-stone-800 text-white" : "text-stone-500 hover:text-stone-200 hover:bg-stone-900"}`,
+                        className: `flex items-center gap-3 px-3 py-2.5 text-sm tracking-[0.25em] uppercase transition-all duration-150 ${isActive ? "bg-stone-800 text-white" : "text-stone-500 hover:text-stone-200 hover:bg-stone-900"}`,
                         children: [
                             item.icon,
                             item.label
@@ -305,7 +305,7 @@ function AdminSidebar() {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                         href: "/dashboard",
-                        className: "text-[10px] tracking-[0.3em] uppercase text-stone-600 hover:text-stone-300 transition-colors",
+                        className: "text-xs tracking-[0.3em] uppercase text-stone-600 hover:text-stone-300 transition-colors",
                         children: "← Dashboard"
                     }, void 0, false, {
                         fileName: "[project]/src/components/admin/admin-sidebar.tsx",
@@ -314,7 +314,7 @@ function AdminSidebar() {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                         href: "/",
-                        className: "text-[10px] tracking-[0.3em] uppercase text-stone-600 hover:text-stone-300 transition-colors",
+                        className: "text-xs tracking-[0.3em] uppercase text-stone-600 hover:text-stone-300 transition-colors",
                         children: "← Storefront"
                     }, void 0, false, {
                         fileName: "[project]/src/components/admin/admin-sidebar.tsx",
@@ -499,7 +499,7 @@ function AdminNotificationBell() {
                                 className: "flex items-center justify-between px-4 py-3 border-b border-stone-800",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-[10px] tracking-[0.4em] uppercase text-stone-400",
+                                        className: "text-xs tracking-[0.4em] uppercase text-stone-400",
                                         children: [
                                             "Notifications ",
                                             unread > 0 && `(${unread})`
@@ -562,7 +562,7 @@ function AdminNotificationBell() {
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "text-[11px] text-stone-400 leading-relaxed",
+                                                        className: "text-sm text-stone-400 leading-relaxed",
                                                         children: n.body
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/admin/admin-notification-bell.tsx",
@@ -573,7 +573,7 @@ function AdminNotificationBell() {
                                                         className: "flex items-center gap-3 mt-1.5",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                className: "text-[10px] text-stone-600",
+                                                                className: "text-xs text-stone-600",
                                                                 children: new Date(n.createdAt).toLocaleDateString("en-GB", {
                                                                     day: "numeric",
                                                                     month: "short",
@@ -594,7 +594,7 @@ function AdminNotificationBell() {
                                                                             handleMarkRead(n.id);
                                                                             setOpen(false);
                                                                         },
-                                                                        className: "text-[10px] tracking-[0.2em] uppercase text-amber-500 hover:text-amber-300 transition-colors",
+                                                                        className: "text-xs tracking-[0.2em] uppercase text-amber-500 hover:text-amber-300 transition-colors",
                                                                         children: "View"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/admin/admin-notification-bell.tsx",
@@ -603,7 +603,7 @@ function AdminNotificationBell() {
                                                                     }, this),
                                                                     !n.read && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_9d8d1bf7a8807769963b5151bd760c41$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                                         onClick: ()=>handleMarkRead(n.id),
-                                                                        className: "text-[10px] tracking-[0.2em] uppercase text-stone-600 hover:text-stone-300 transition-colors",
+                                                                        className: "text-xs tracking-[0.2em] uppercase text-stone-600 hover:text-stone-300 transition-colors",
                                                                         children: "Dismiss"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/admin/admin-notification-bell.tsx",

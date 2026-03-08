@@ -21,7 +21,7 @@ export default function RatingSummary({ average, total, breakdown }: RatingSumma
           {average.toFixed(1)}
         </span>
         <StarRating rating={average} size="sm" />
-        <p className="text-[10px] tracking-[0.3em] uppercase text-stone-400">
+        <p className="text-xs tracking-[0.3em] uppercase text-stone-400">
           {total} {total === 1 ? "review" : "reviews"}
         </p>
       </div>
@@ -33,7 +33,7 @@ export default function RatingSummary({ average, total, breakdown }: RatingSumma
           const pct = total > 0 ? (count / total) * 100 : 0;
           return (
             <div key={star} className="flex items-center gap-1">
-              <span className="text-[10px] tracking-wide text-stone-500 w-4 text-right shrink-0">
+              <span className="text-xs tracking-wide text-stone-500 w-4 text-right shrink-0">
                 {star}
               </span>
               <svg width="10" height="10" viewBox="0 0 24 24" className="shrink-0">
@@ -48,7 +48,7 @@ export default function RatingSummary({ average, total, breakdown }: RatingSumma
                   style={{ width: `${pct}%` }}
                 />
               </div>
-              <span className="text-[10px] text-stone-400 w-6 shrink-0">{count}</span>
+              <span className="text-xs text-stone-400 w-6 shrink-0">{count}</span>
             </div>
           );
         })}

@@ -100,7 +100,7 @@ export default async function DashboardPage() {
         <div className="relative max-w-7xl mx-auto px-6 py-14">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
             <div>
-              <p className="text-[10px] tracking-[0.5em] uppercase text-stone-500 mb-3">
+              <p className="text-xs tracking-[0.5em] uppercase text-stone-500 mb-3">
                 {greeting}
               </p>
               <h1
@@ -131,14 +131,14 @@ export default async function DashboardPage() {
               <div className="hidden md:flex flex-col gap-1">
                 <Link
                   href="/settings"
-                  className="text-[10px] tracking-[0.3em] uppercase text-stone-400 hover:text-white transition-colors"
+                  className="text-xs tracking-[0.3em] uppercase text-stone-400 hover:text-white transition-colors"
                 >
                   Edit profile →
                 </Link>
                 {isAdmin && (
                   <Link
                     href="/admin"
-                    className="text-[10px] tracking-[0.3em] uppercase text-amber-500 hover:text-amber-300 transition-colors"
+                    className="text-xs tracking-[0.3em] uppercase text-amber-500 hover:text-amber-300 transition-colors"
                   >
                     Admin panel →
                   </Link>
@@ -161,7 +161,7 @@ export default async function DashboardPage() {
                 >
                   {stat.value}
                 </span>
-                <span className="text-[10px] tracking-[0.35em] uppercase text-stone-400">
+                <span className="text-xs tracking-[0.35em] uppercase text-stone-400">
                   {stat.label}
                 </span>
               </div>
@@ -185,7 +185,7 @@ export default async function DashboardPage() {
               </div>
               <div>
                 <p className="text-sm text-stone-900 mb-0.5">{link.label}</p>
-                <p className="text-[10px] text-stone-400 leading-relaxed">
+                <p className="text-xs text-stone-400 leading-relaxed">
                   {link.description}
                 </p>
               </div>
@@ -206,7 +206,7 @@ export default async function DashboardPage() {
               </h2>
               <Link
                 href="/dashboard/orders"
-                className="text-[10px] tracking-[0.35em] uppercase text-stone-400 hover:text-stone-900 transition-colors flex items-center gap-1.5 group"
+                className="text-xs tracking-[0.35em] uppercase text-stone-400 hover:text-stone-900 transition-colors flex items-center gap-1.5 group"
               >
                 View all
                 <svg width="12" height="8" viewBox="0 0 12 8" fill="none" className="group-hover:translate-x-0.5 transition-transform">
@@ -230,7 +230,7 @@ export default async function DashboardPage() {
                 </div>
                 <Link
                   href="/products"
-                  className="text-[10px] tracking-[0.35em] uppercase text-stone-500 underline underline-offset-4 hover:text-stone-900 transition-colors"
+                  className="text-xs tracking-[0.35em] uppercase text-stone-500 underline underline-offset-4 hover:text-stone-900 transition-colors"
                 >
                   Start shopping
                 </Link>
@@ -270,10 +270,10 @@ export default async function DashboardPage() {
                       {/* Info */}
                       <div className="flex-1 min-w-0">
                         <div className="flex items-start justify-between gap-2 mb-1.5">
-                          <p className="text-[10px] tracking-[0.3em] uppercase text-stone-400">
+                          <p className="text-sm tracking-[0.3em] uppercase text-stone-400">
                             #{order.id.slice(-8).toUpperCase()}
                           </p>
-                          <span className={`flex items-center gap-1 text-[9px] tracking-[0.25em] uppercase ${config.color}`}>
+                          <span className={`flex items-center gap-1 text-xs tracking-[0.25em] uppercase ${config.color}`}>
                             <span className={`w-1.5 h-1.5 rounded-full ${config.dot}`} />
                             {config.label}
                           </span>
@@ -322,7 +322,7 @@ export default async function DashboardPage() {
                 </h2>
                 <Link
                   href="/dashboard/wishlist"
-                  className="text-[10px] tracking-[0.35em] uppercase text-stone-400 hover:text-stone-900 transition-colors"
+                  className="text-xs tracking-[0.35em] uppercase text-stone-400 hover:text-stone-900 transition-colors"
                 >
                   View all
                 </Link>
@@ -330,10 +330,10 @@ export default async function DashboardPage() {
 
               {wishlistPreview.length === 0 ? (
                 <div className="bg-white border border-stone-200 p-6 text-center">
-                  <p className="text-xs text-stone-400 mb-3">No saved items yet.</p>
+                  <p className="text-sm text-stone-400 mb-3">No saved items yet.</p>
                   <Link
                     href="/products"
-                    className="text-[10px] tracking-[0.35em] uppercase text-stone-500 underline underline-offset-4 hover:text-stone-900 transition-colors"
+                    className="text-xs tracking-[0.35em] uppercase text-stone-500 underline underline-offset-4 hover:text-stone-900 transition-colors"
                   >
                     Browse collection
                   </Link>
@@ -358,10 +358,10 @@ export default async function DashboardPage() {
                       )}
                       <div className="absolute inset-0 bg-linear-to-t from-stone-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                       <div className="absolute bottom-0 inset-x-0 p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                        <p className="text-[10px] text-white tracking-wide leading-snug">
+                        <p className="text-sm text-white tracking-wide leading-snug">
                           {product.name}
                         </p>
-                        <p className="text-[10px] text-stone-300">
+                        <p className="text-xs text-stone-300">
                           {formatPrice(product.price, "USD")}
                         </p>
                       </div>
@@ -401,7 +401,7 @@ export default async function DashboardPage() {
 
             {/* Account card */}
             <div className="bg-white border border-stone-200 p-6 flex flex-col gap-4">
-              <p className="text-[10px] tracking-[0.45em] uppercase text-stone-400">
+              <p className="text-sm tracking-[0.45em] uppercase text-stone-400">
                 Account
               </p>
               <div className="flex flex-col gap-3">
@@ -411,7 +411,7 @@ export default async function DashboardPage() {
                   { label: "Role",   value: user.role ?? "Customer" },
                 ].map((row) => (
                   <div key={row.label} className="flex justify-between items-center gap-4">
-                    <span className="text-[10px] tracking-[0.3em] uppercase text-stone-400 shrink-0">
+                    <span className="text-xs tracking-[0.3em] uppercase text-stone-400 shrink-0">
                       {row.label}
                     </span>
                     <span className="text-xs text-stone-700 text-right truncate">
@@ -422,7 +422,7 @@ export default async function DashboardPage() {
               </div>
               <Link
                 href="/settings"
-                className="mt-1 w-full border border-stone-200 text-stone-500 py-2.5 text-[10px] tracking-[0.3em] uppercase text-center hover:border-stone-900 hover:text-stone-900 transition-all"
+                className="mt-1 w-full border border-stone-200 text-stone-500 py-2.5 text-xs tracking-[0.3em] uppercase text-center hover:border-stone-900 hover:text-stone-900 transition-all"
               >
                 Edit profile
               </Link>

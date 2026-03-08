@@ -21,7 +21,7 @@ export default function PressPage() {
 
         {/* Press contact */}
         <div className="bg-stone-900 text-white p-8 flex flex-col gap-4">
-          <p className="text-[10px] tracking-[0.5em] uppercase text-stone-400">
+          <p className="text-xs tracking-[0.5em] uppercase text-stone-400">
             Press contact
           </p>
           <div>
@@ -47,14 +47,14 @@ export default function PressPage() {
             {coverage.map((item) => (
               <div key={item.headline} className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 py-5 border-b border-stone-100">
                 <div className="flex flex-col gap-1">
-                  <p className="text-[10px] tracking-[0.3em] uppercase text-stone-400">
+                  <p className="text-xs tracking-[0.3em] uppercase text-stone-400">
                     {item.outlet}
                   </p>
                   <p className="text-stone-700 text-sm">
                     "{item.headline}"
                   </p>
                 </div>
-                <span className="text-[10px] tracking-widest text-stone-400 shrink-0">
+                <span className="text-xs tracking-widest text-stone-400 shrink-0">
                   {item.date}
                 </span>
               </div>
