@@ -25,7 +25,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://fashio.vercel.app"),
+  metadataBase: new URL("https://look.vercel.app"),
   title: {
     default: "LOOK — Modern Fashion",
     template: "%s | LOOK",
@@ -47,17 +47,17 @@ export const metadata: Metadata = {
   creator: "LOOK",
   publisher: "LOOK",
   openGraph: {
-    title: "Fashio – Premium Online Fashion Store",
+    title: "LOOK – Premium Online Fashion Store",
     description:
-      "Explore the latest fashion trends, premium outfits, and exclusive collections at Fashio.",
-    url: "https://fashio.vercel.app",
-    siteName: "Fashio",
+      "Explore the latest fashion trends, premium outfits, and exclusive collections at LOOK.",
+    url: "https://look.vercel.app",
+    siteName: "LOOK",
     images: [
       {
-        url: "/images/og-image.jpg",
+        url: "/images/logo.png",
         width: 1200,
         height: 630,
-        alt: "Fashio Fashion Store",
+        alt: "LOOK Fashion Store",
       },
     ],
     locale: "en_US",
@@ -112,9 +112,9 @@ export default async function RootLayout({
                   "font-sans border border-stone-200 bg-white text-stone-900 shadow-lg rounded-none",
                 title: "text-xs tracking-[0.2em] uppercase font-medium",
                 description: "text-xs text-stone-500 tracking-wide",
-                success: "border-l-2 border-l-green-600",
-                error: "border-l-2 border-l-red-500",
-                info: "border-l-2 border-l-stone-900",
+                success: "border-l-2 border-l-lime-500",
+                error: "border-l-2 border-l-destructive",
+                info: "border-l-2 border-l-cyan-600",
               },
             }}
           />
