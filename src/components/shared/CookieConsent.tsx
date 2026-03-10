@@ -173,7 +173,7 @@ export default function CookieConsent() {
         {/* Actions */}
         <div className="px-7 py-5 flex flex-col gap-3">
           {/* Primary actions */}
-          <div className="flex gap-3">
+          <div className="flex flex-col md:flex-row gap-3">
             <button
               onClick={handleAcceptAll}
               className="flex-1 bg-stone-900 text-white py-3 text-sm tracking-[0.3em] uppercase hover:bg-stone-700 transition-colors"
