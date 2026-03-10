@@ -259,7 +259,7 @@ export default function Footer() {
                 target="_blank"
                 className=""
               >
-                Haruna Amadu ⚡
+                Haruna ⚡
               </a>
             </p>
 

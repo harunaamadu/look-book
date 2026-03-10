@@ -8,7 +8,7 @@ import { authConfig } from "./auth.config";
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   ...authConfig,
-  adapter: PrismaAdapter(db as any), // ← cast needed for Prisma 6 type mismatch
+  adapter: PrismaAdapter(db as any),
   session: { strategy: "jwt" },
   providers: [
     Google({
